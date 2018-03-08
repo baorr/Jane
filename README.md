@@ -4,7 +4,7 @@
 UI for PC, Mobile Device, App
 
 ### Aim
-Only use HTML* and CSS* features to make interacted web commponents.
+Only use HTML* and CSS* features to make interacted web commponents.Let javascript to do business.
 
 ### Local Test
 
