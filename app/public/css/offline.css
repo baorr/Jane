@@ -1,0 +1,89 @@
+.pull-down-list-item{display: none}
+.pull-down-list-item li{font-size: .6875rem;position: relative;}
+
+.pull-down-list-item li.active{background-color: #f0f3f6;}
+.pull-down-list-item li.active a{color:#3d70b2}
+.pull-down-list-item li a{color:#000;text-decoration: none;display: block;padding:0.5625rem 2rem;}
+.pull-down-list-item li:hover{background-color: #f0f3f6;}
+.pull-down-list-item li:hover a{color:#3d70b2 }
+.pull-down-list-item li.active a:before{top: 0;position: absolute;background-color: #3d70b2;height: 100%;left: 0;width: 4px;content: '';}
+.subitem:after{
+	content: '';
+	width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-top: 5px solid #3d70b2;
+    border-left: 3px solid transparent;
+}
+.subitem-top:after{
+    content: '';width: 0;height: 0;border-right: 3px solid transparent;border-bottom: 5px solid #3d70b2;
+    border-left: 3px solid transparent;}
+.bx--interior-left-nav--collapseable .left-nav-list-active>.left-nav-list__item-link:before{top: 0;position: absolute;background-color: #3d70b2;height: 100%;left: 0;width: 4px;content: '';}
+.bx--interior-left-nav .left-nav-list-active>.left-nav-list__item-link{color: #3d70b2;font-weight: 600;}
+.bx--content-switcher-btn.bx--content-switcher--selected .icon{display: inline-block;width: 16px;height: 16px;background-color: #fff;color: #3d70b2;border-radius: 50%;line-height: 16px;margin-left: 10px;text-align: center;}
+.tablend td{text-align: center;color: #666;display: none}
+.table-news-style td{padding:0.5rem 0.375rem;color: #152935;}
+.table-news-style tr:nth-child(odd){background-color: #f0f3f6}
+.btn-danger{color: #fff;color: red;text-decoration: none;}
+.btn-reset{color: #fff;margin-left: 0.3rem;color: #3d70b2;text-decoration: none;}
+.check a{padding:0 6px;}
+.offlineStyle a{text-decoration: none;color: #000;cursor:default}
+.checkPatch a,.resetSubmit a{padding:0 .3rem;text-decoration: none}
+.checkPatch a:first-child{color:#3d70b2;}
+.checkPatch a:last-child{color:red}
+.resetSubmit a:last-child{color:#3d70b2;}
+.resetSubmit a:first-child{color:red;position: relative;width: 3.5rem;display: inline-block;}
+.resetSubmit a:first-child:before{content: '/';background-color: red;display: inline-block;width: 10px;height: 10px;border-radius: 50%;color:#fff;text-align: center;line-height: 10px;padding:2px;margin-right: 3px;}
+.validate-form input,.validate-form .bx--dropdown .bx--dropdown-text{border-bottom-color: red;border-radius: 2px;border-width: 2px;}
+
+ .validate-form .picture-show{border:2px solid red;}
+ .validate-form .bx--form-requirement{margin:.5rem 0;max-height: 5.5rem}
+.validate-form .bx--form-requirement span{color:rgba(0, 0, 0, 0.87)}
+ input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+.table-news-style td.green{color: green}
+.table-news-style td.red{color:red;}
+.table-query{display: flex;-webkit-flex;}
+.table-query-title .bx--content-switcher{margin-bottom: 30px;}
+.table-query input{width: 124px;}
+.table-query .wd-canledar-owner input{padding-right: 0;padding-left: 36px;}
+.table-query .wd-canledar-owner svg{left:12px;}
+.table-query-space{margin-left: 12px;margin-right: 128px}
+.table-query .btn{height:40px;width: 70px;background-color: #3d70b2;color: #fff;border: none;font-size: 14px;margin-left: 16px;cursor: pointer;}
+#offlineBtn{border-radius:0}
+.getBankSlip-tips{color: rgba(0,0,0,.45)}
+.success-tips{ display: inline-block; width: 7px;height:3px; background: #24c89a;line-height: 0;font-size:0;vertical-align: middle;-webkit-transform: rotate(45deg);margin-right:10px;margin-left: 5px;vertical-align: middle;margin-top: 3px;}
+.success-tips:before{content:'/';display:block;width: 15px;height:3px; background: #24c89a;-webkit-transform: rotate(-90deg) translateY(-50%) translateX(50%);}
+
+.table-query .bx--form-item:first-child{margin-right:8rem;}
+.table-query .bx--form-item {display: inline-flex;flex: none;-webkit-box-flex:none;-ms-flex:none;margin-bottom:0;}
+.table-query .bx--date-picker__icon{top:.75rem;}
+.table-query .bx--form-item .bx--select-input{width:11.2rem;padding:.6rem 2.75rem .6rem 1rem;}
+.cur-month{float: right;left: -3.3rem;position:relative;top:3px;}
+.bx--add-marketType{width: 310px;padding-left: 1px;}
+.bx--add-marketType .bx--dropdown-text{font-weight:normal;}
+.bx--add-marketType .bx--dropdown{width: 310px;}
+#remittanceTime{
+  width:310px;max-width: none;
+}
+.bx--interior-left-nav--collapseable .left-nav-list__item{overflow: hidden;}
+#contractList tr>td:last-child:before{content: '';width: 10px;height: 10px;display: inline-block;border-radius: 50%;vertical-align: center;margin-right: 6px;}
+#contractList tr>.info-default:before{background-color:green }
+#contractList tr>.info-warning:before{background-color:red }
+#contractList tr>.info-end:before{background-color:gray }
+.resetSubmit{position: relative;cursor: pointer;}
+.toolTips{width: 200px;height: auto;position: absolute;z-index: 99;border: 1px solid rgba(61,112,178,.5);padding:10px 12px;color: #152935;top: 28px;background-color:#fff;box-shadow: 0px 0px 1px 1px #dcdcdc;border-radius: 4px;left: -90px;display:none;}
+.toolTips .arrow{width: 12px;height: 12px;display: inline-block;position: absolute;left: 0;top: -8px;margin-left: 94px}
+.toolTips .arrow:before{content: '';width: 0;height: 0;border-width: 8px 6px;border-style: solid;border-color:transparent transparent rgba(61,112,178,.5);font-size:0; line-height:0;position: absolute;top: -8px;left: 0;}
+.toolTips .arrow:after{content: '';width: 0;height: 0;border-width: 8px 4px;border-style: solid;border-color:transparent transparent #fff;font-size:0; line-height:0;position: absolute;top: -7px;left:2px;}
+.toolTips .content{font-size: .5rem;line-height: 1.2rem;text-align: justify;letter-spacing: .01rem;}
+.toolTips .content span{color:#ff7300;}
+.resetSubmit .toolTips{left: -88px;top:20px;}
+
+.bx--interior-left-nav .sliderStyle{padding-left: 16px;border-left: 4px solid #3d70b2;color: #3d70b2;box-sizing: content-box;}
+ .bx--interior-left-nav .left-nav-list--nested .sliderStyle{padding-left: 2.2rem;border-left: 4px solid #3d70b2;color: #3d70b2;box-sizing: content-box;}

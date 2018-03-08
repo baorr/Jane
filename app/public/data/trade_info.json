@@ -1,0 +1,1752 @@
+{
+	"code": 0,
+	"data": {
+		"website_new": {
+			"display": "show",
+			"name": "网站",
+			"child": {
+				"qyjj": {
+					"name": "企业建站",
+					"trade": "other",
+					"display": "show",
+					"enName": "Enterprise official website"
+				},
+				"wzgs": {
+					"name": "网建公司",
+					"trade": "other",
+					"display": "show",
+					"enName": "Website-building company"
+				},
+				"grzz": {
+					"name": "个人站长",
+					"trade": "other",
+					"display": "show",
+					"enName": "Personal webmaster"
+				},
+				"sqltwb": {
+					"name": "社区/论坛/博客",
+					"trade": "other",
+					"display": "show",
+					"enName": "Community / forum / blog"
+				},
+				"ydh5jj": {
+					"name": "移动H5建站",
+					"trade": "other",
+					"display": "show",
+					"enName": "Responsive H5 website"
+				},
+				"xcxkf": {
+					"name": "小程序开发",
+					"trade": "other",
+					"display": "show",
+					"enName": "Lite App development"
+				},
+				"gzhkf": {
+					"name": "公众号开发",
+					"trade": "other",
+					"display": "show",
+					"enName": "WeChat OA development"
+				},
+				"other": {
+					"name": "其他",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Website Construction"
+		},
+
+		"game": {
+			"name": "游戏",
+			"display": "show",
+			"child": {
+				"handgame": {
+					"name": "手机游戏",
+					"trade": "game",
+					"display": "show",
+					"enName": "Mobile games"
+				},
+				"pagegame": {
+					"name": "网页游戏",
+					"trade": "game",
+					"display": "show",
+					"enName": "Web games"
+				},
+				"clientgame": {
+					"name": "客户端游戏",
+					"trade": "game",
+					"display": "show",
+					"enName": "Client games"
+				},
+				"h5game": {
+					"name": "H5游戏",
+					"trade": "game",
+					"display": "show",
+					"enName": "H5 games"
+				},
+				"vrgame": {
+					"name": "VR游戏",
+					"trade": "game",
+					"display": "show",
+					"enName": "VR games"
+				},
+				"tvgame": {
+					"name": "电视游戏",
+					"trade": "game",
+					"display": "show",
+					"enName": "TV games"
+				},
+				"dsffw": {
+					"name": "第三方服务",
+					"trade": "game",
+					"display": "show",
+					"enName": "Third-party services"
+				},
+				"gamept": {
+					"name": "游戏平台",
+					"trade": "game",
+					"display": "show",
+					"enName": "Game platform"
+				},
+				"gameyy": {
+					"name": "游戏运营",
+					"trade": "game",
+					"display": "hidden",
+					"enName": "Game Ops"
+				},
+				"gameryj": {
+					"name": "游戏软硬件",
+					"trade": "game",
+					"display": "hidden",
+					"enName": "Game software / hardware"
+				},
+				"enginegame": {
+					"name": "游戏引擎",
+					"trade": "game",
+					"display": "hidden",
+					"enName": "Game engines"
+				},
+				"othergame": {
+					"name": "其他",
+					"trade": "game",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Games"
+		},
+		"finance": {
+			"name": "金融",
+			"display": "show",
+			"child": {
+				"finance_a5": {
+					"name": "银行",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Banks"
+				},
+				"finance_a2": {
+					"name": "保险",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Insurance"
+				},
+				"finance_a3": {
+					"name": "证券",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Security"
+				},
+				"xtqhjj": {
+					"name": "信托/期货/基金",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Trust / Futures / Funds"
+				},
+				"jrjcfws": {
+					"name": "金融集成商/服务商",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Financial software"
+				},
+				"p2pxd": {
+					"name": "P2P/小贷",
+					"trade": "finance",
+					"display": "show",
+					"enName": "P2P / Microfinance"
+				},
+				"finance_a4": {
+					"name": "消费金融",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Consumption finance"
+				},
+				"finance_a9": {
+					"name": "交易所",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Stock Exchanges"
+				},
+				"billfinance": {
+					"name": "第三方支付",
+					"trade": "finance",
+					"display": "show",
+					"enName": "3nd payment provider"
+				},
+				"mediafinance": {
+					"name": "金融媒体",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Financial media"
+				},
+				"zcdb": {
+					"name": "资产担保",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Asset guarantee"
+				},
+				"zcbgsj": {
+					"name": "资产评估/审计",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Asset appraisal / auditing"
+				},
+				"finance_a10": {
+					"name": "其他金融机构/服务",
+					"trade": "finance",
+					"display": "show",
+					"enName": "Others"
+				},
+				"finance_b11": {
+					"name": "小贷",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Small-amount loans"
+				},
+				"finance_b12": {
+					"name": "P2P",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "P2P"
+				},
+				"finance_b13": {
+					"name": "资产管理",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Assets management"
+				},
+				"finance_b14": {
+					"name": "担保",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Loan guarantee"
+				},
+				"finance_b15": {
+					"name": "众筹",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Crowd-funding"
+				},
+				"finance_b16": {
+					"name": "财务公司",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Financial company"
+				},
+				"finance_b17": {
+					"name": "典当",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Pawnbroker"
+				},
+				"finance_b18": {
+					"name": "其他互联网金融",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Other internet finance services"
+				},
+				"finance_c19": {
+					"name": "软件开发商 ",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Software developer"
+				},
+				"finance_c20": {
+					"name": "系统集成商",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "System integrator"
+				},
+				"creditfinance": {
+					"name": "征信",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Credit information service"
+				},
+				"finance_a6": {
+					"name": "基金",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Funds"
+				},
+				"finance_a7": {
+					"name": "信托",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Trust"
+				},
+				"finance_a8": {
+					"name": "期货",
+					"trade": "finance",
+					"display": "hidden",
+					"enName": "Futures"
+				}
+			},
+			"enName": "Finance"
+		},
+		"video": {
+			"name": "音视频",
+			"display": "show",
+			"child": {
+				"onlinevideo": {
+					"name": "在线视频",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Video streaming"
+				},
+				"securityvideo": {
+					"name": "安防监控",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Security monitoring"
+				},
+				"live": {
+					"name": "直播",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Live broadcast"
+				},
+				"rendervideo": {
+					"name": "渲染",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Rendering"
+				},
+				"shortvideo": {
+					"name": "短视频",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Short videos"
+				},
+				"vrvideo": {
+					"name": "VR视频",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "VR video"
+				},
+				"softwarevideo": {
+					"name": "视频软件",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "softwarevideo"
+				},
+				"hardwarevideo": {
+					"name": "视频设备",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "hardwarevideo"
+				},
+				"videother": {
+					"name": "其他",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "videother"
+				},
+				"videoott": {
+					"name": "广电/视频OTT",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Broadcasting / video OTT"
+				},
+				"meidiavideo": {
+					"name": "视频媒体",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Video media"
+				},
+				"movievideo": {
+					"name": "影视相关",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "TV and movies"
+				},
+				"nettvvideo": {
+					"name": "网络视频电视台",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Online TV stations"
+				},
+				"videoandaudio": {
+					"name": "音视频",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Audio / video"
+				},
+				"videocloud": {
+					"name": "视频云",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Video cloud"
+				},
+				"videomonitor": {
+					"name": "视频监控",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Video monitoring"
+				},
+				"snsvideo": {
+					"name": "社交直播",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Social Liveshow"
+				},
+				"gamevideo": {
+					"name": "游戏直播",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "Game Liveshow"
+				}
+			},
+			"enName": "Audio/video"
+		},
+		"wechat": {
+			"name": "微信服务",
+			"display": "show",
+			"child": {
+				"wechat": {
+					"name": "微信服务",
+					"trade": "other",
+					"display": "show",
+					"enName": "WeChat-related services"
+				}
+			},
+			"enName": "WeChat-related services"
+		},
+		"itcc": {
+			"name": "IT服务/软件",
+			"display": "show",
+			"child": {
+				"crm": {
+					"name": "CRM",
+					"trade": "other",
+					"display": "show",
+					"enName": "CRM"
+				},
+				"erp": {
+					"name": "ERP",
+					"trade": "other",
+					"display": "show",
+					"enName": "ERP"
+				},
+				"boss": {
+					"name": "BOSS",
+					"trade": "other",
+					"display": "show",
+					"enName": "BOSS"
+				},
+				"cwxt": {
+					"name": "财务软件",
+					"trade": "other",
+					"display": "show",
+					"enName": "Accounting software"
+				},
+				"oa": {
+					"name": "OA",
+					"trade": "other",
+					"display": "show",
+					"enName": "Office automation"
+				},
+				"rjkf": {
+					"name": "软件开发",
+					"trade": "other",
+					"display": "show",
+					"enName": "Other software"
+				},
+				"jrrjfw": {
+					"name": "金融软件服务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Finance software"
+				},
+				"xtaq": {
+					"name": "系统安全",
+					"trade": "other",
+					"display": "show",
+					"enName": "System security"
+				},
+				"others": {
+					"name": "其他",
+					"trade": "other",
+					"display": "show",
+					"enName": "Other IT services"
+				},
+				"itservice": {
+					"name": "系统/数据/维护",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "System / data / maintenance"
+				},
+				"ec": {
+					"name": "电子/半导体/集成",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Electronic component / Semiconductor / Integrated circuit"
+				},
+				"chardware": {
+					"name": "计算机硬件",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Computer hardware"
+				},
+				"softsi": {
+					"name": "软件服务和系统集成",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Software service and system integration"
+				},
+				"txdxsb": {
+					"name": "通信/电信/网络设备",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Communication - Telecommunication & network devices"
+				},
+				"txdxzz": {
+					"name": "通信/增值服务",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Communication - value-added services"
+				},
+				"otheritcc": {
+					"name": "其他",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Others"
+				},
+				"itcc": {
+					"name": "IT云服务/软件",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "IT cloud service / software"
+				}
+			},
+			"enName": "IT services/software"
+		},
+		"o2o": {
+			"name": "O2O生活服务",
+			"display": "show",
+			"child": {
+				"travel": {
+					"name": "出行",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Travel"
+				},
+				"nysx": {
+					"name": "农业/生鲜",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Agricultural products"
+				},
+				"car": {
+					"name": "汽车服务",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Car services"
+				},
+				"qrwipos": {
+					"name": "二维码/wifi/pos",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "QR code / Wi-Fi / POS"
+				},
+				"cyws": {
+					"name": "餐饮外送",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Food delivery"
+				},
+				"hjmy": {
+					"name": "婚嫁/美业",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Wedding / beauty"
+				},
+				"fcjz": {
+					"name": "房产/家装",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Real estate / home decor"
+				},
+				"sqjj": {
+					"name": "社区/家政",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Housekeeping"
+				},
+				"lckq": {
+					"name": "理财/卡券",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Wealth management"
+				},
+				"o2o": {
+					"name": "O2O生活服务",
+					"trade": "o2o",
+					"display": "hidden",
+					"enName": "O2O life services"
+				},
+				"others": {
+					"name": "其他",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "O2O life services"
+		},
+		"ec": {
+			"name": "电子商务",
+			"display": "show",
+			"child": {
+				"b2b": {
+					"name": "B2B",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "B2B"
+				},
+				"b2c": {
+					"name": "B2C",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "B2C"
+				},
+				"c2c": {
+					"name": "C2C",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "C2C"
+				},
+				"tgdg": {
+					"name": "团购导购",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Group buy & information"
+				},
+				"lsscls": {
+					"name": "零售/商超/连锁",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Retailing"
+				},
+				"ec": {
+					"name": "电子商务",
+					"trade": "o2o",
+					"display": "hidden",
+					"enName": "E-commerce"
+				},
+				"others": {
+					"name": "其他",
+					"trade": "o2o",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "E-commerce"
+		},
+		"estate": {
+			"display": "show",
+			"name": "房地产",
+			"child": {
+				"fdckf": {
+					"name": "房地产开发",
+					"trade": "other",
+					"display": "show",
+					"enName": "Residential real estate"
+				},
+				"sydcgydc": {
+					"name": "商业地产和工业地产",
+					"trade": "other",
+					"display": "show",
+					"enName": "Other real estate"
+				},
+				"gcsjjshzb": {
+					"name": "工程设计/建设和总包",
+					"trade": "other",
+					"display": "show",
+					"enName": "Construction engineering"
+				}
+			},
+			"enName": "Real estate"
+		},
+		"public": {
+			"display": "show",
+			"name": "公共事业",
+			"child": {
+				"electricity": {
+					"name": "电力",
+					"trade": "other",
+					"display": "show",
+					"enName": "Electric utilities"
+				},
+				"water": {
+					"name": "水务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Water utilities"
+				},
+				"gas": {
+					"name": "燃气",
+					"trade": "other",
+					"display": "show",
+					"enName": "Gas utilities"
+				}
+			},
+			"enName": "Public utilities"
+		},
+		"traffic": {
+			"name": "交通运输业",
+			"display": "show",
+			"child": {
+				"hkgs": {
+					"name": "航空公司",
+					"trade": "other",
+					"display": "show",
+					"enName": "Airline companies"
+				},
+				"hygs": {
+					"name": "航运公司",
+					"trade": "other",
+					"display": "show",
+					"enName": "Marine companies "
+				},
+				"ggjtczc": {
+					"name": "公共交通/出租车",
+					"trade": "other",
+					"display": "show",
+					"enName": "Bus / taxi"
+				},
+				"expressway": {
+					"name": "高速公路",
+					"trade": "other",
+					"display": "show",
+					"enName": "Highways"
+				},
+				"tlhgdjt": {
+					"name": "铁路和轨道交通",
+					"trade": "other",
+					"display": "show",
+					"enName": "Rails"
+				},
+				"gkjchcz": {
+					"name": "港口/机场/火车站",
+					"trade": "other",
+					"display": "show",
+					"enName": "Public transport hubs"
+				},
+				"wlfwgys": {
+					"name": "物流服务供应商",
+					"trade": "other",
+					"display": "show",
+					"enName": "Logistics service"
+				},
+				"traffic": {
+					"name": "交通运输/生产制造",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Transportation / Manufacturing"
+				}
+			},
+			"enName": "Transportation industry"
+		},
+		"education": {
+			"name": "教育",
+			"display": "show",
+			"child": {
+				"xxhgljg": {
+					"name": "学校和管理机构",
+					"trade": "other",
+					"display": "show",
+					"enName": "Schools & authorities"
+				},
+				"yjjg": {
+					"name": "研究机构",
+					"trade": "other",
+					"display": "show",
+					"enName": "Research institutes"
+				},
+				"pxljyjg": {
+					"name": "培训类教育机构",
+					"trade": "other",
+					"display": "show",
+					"enName": "Training institutes"
+				},
+				"onlineedu": {
+					"name": "在线教育",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Online education"
+				},
+				"remoteedu": {
+					"name": "远程教育",
+					"trade": "other",
+					"display": "show",
+					"enName": "Remote education"
+				},
+				"moke": {
+					"name": "慕课",
+					"trade": "videoedu",
+					"display": "hidden",
+					"enName": "IMOOC"
+				},
+				"scedu": {
+					"name": "学术/科研",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Academic / scientific research"
+				},
+				"netedu": {
+					"name": "网络教学",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Network education"
+				},
+				"otheredu": {
+					"name": "其他",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Education"
+		},
+		"lshpf": {
+			"name": "零售商和批发商",
+			"display": "show",
+			"child": {
+				"jxpfmygs": {
+					"name": "经销批发贸易公司",
+					"trade": "other",
+					"display": "show",
+					"enName": "Distributors / wholesalers"
+				},
+				"dmccs": {
+					"name": "大卖场&超市",
+					"trade": "other",
+					"display": "show",
+					"enName": "Hyper / Super-markets"
+				},
+				"bld": {
+					"name": "便利店",
+					"trade": "other",
+					"display": "show",
+					"enName": "Convenience stores"
+				},
+				"department": {
+					"name": "百货商场",
+					"trade": "other",
+					"display": "show",
+					"enName": "Department stores"
+				},
+				"zygwsc": {
+					"name": "专业购物商场",
+					"trade": "other",
+					"display": "show",
+					"enName": "Specialty stores"
+				}
+			},
+			"enName": "Retailers and wholesalers"
+		},
+		"travel": {
+			"name": "旅游",
+			"display": "show",
+			"child": {
+				"lvpt": {
+					"name": "旅游平台",
+					"trade": "other",
+					"display": "show",
+					"enName": "Tourism ISP"
+				},
+				"lvgljg": {
+					"name": "旅游管理机构",
+					"trade": "other",
+					"display": "show",
+					"enName": "Tourism authorities"
+				},
+				"lxs": {
+					"name": "旅行社",
+					"trade": "other",
+					"display": "show",
+					"enName": "Travel agencies "
+				},
+				"hotel": {
+					"name": "酒店",
+					"trade": "other",
+					"display": "show",
+					"enName": "Hotels"
+				},
+				"ticketing": {
+					"name": "票务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Ticketing"
+				},
+				"maps": {
+					"name": "地图",
+					"trade": "other",
+					"display": "show",
+					"enName": "Maps"
+				},
+				"travel": {
+					"name": "旅游出行",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Travel"
+				},
+				"others": {
+					"name": "其他",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Travel"
+		},
+		"whcm": {
+			"display": "show",
+			"name": "媒体",
+			"child": {
+				"bkcbs": {
+					"name": "报刊/出版社",
+					"trade": "other",
+					"display": "show",
+					"enName": "Print media"
+				},
+				"mycm": {
+					"name": "民营传媒",
+					"trade": "other",
+					"display": "show",
+					"enName": "Media companies"
+				},
+				"hlwcm": {
+					"name": "互联网传媒",
+					"trade": "other",
+					"display": "show",
+					"enName": "Internet media"
+				},
+				"zxxw": {
+					"name": "在线新闻",
+					"trade": "other",
+					"display": "show",
+					"enName": "Online news"
+				},
+				"zcgg": {
+					"name": "在线广告",
+					"trade": "other",
+					"display": "show",
+					"enName": "Online advertising"
+				},
+				"hwmt": {
+					"name": "户外媒体",
+					"trade": "other",
+					"display": "show",
+					"enName": "Outdoor media"
+				},
+				"videoott": {
+					"name": "广电/OTT",
+					"trade": "other",
+					"display": "show",
+					"enName": "Radio / TV / Movie / OTT"
+				},
+				"meidiavideo": {
+					"name": "视频媒体",
+					"trade": "other",
+					"display": "show",
+					"enName": "Video media"
+				},
+				"media": {
+					"name": "影院",
+					"trade": "other",
+					"display": "show",
+					"enName": "Cinemas"
+				},
+				"vrmovies": {
+					"name": "VR电影",
+					"trade": "other",
+					"display": "show",
+					"enName": "VR movies"
+				},
+				"movievideo": {
+					"name": "影视相关",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				},
+				"whcm": {
+					"name": "新闻传媒新闻传媒",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "News media"
+				},
+				"dmpab": {
+					"name": "数字营销/程序化交易广告",
+					"trade": "other",
+					"display": "show",
+					"enName": "Digital marketing / Programmatic advertising buying"
+				}
+			},
+			"enName": "Media"
+		},
+		"communications": {
+			"display": "show",
+			"name": "通讯",
+			"child": {
+				"Carriers": {
+					"name": "运营商",
+					"trade": "other",
+					"display": "show",
+					"enName": "Operators"
+				},
+				"txsb": {
+					"name": "通讯设备",
+					"trade": "other",
+					"display": "show",
+					"enName": "Telecom devices"
+				},
+				"sjcs": {
+					"name": "手机厂商",
+					"trade": "other",
+					"display": "show",
+					"enName": "Mobile devices"
+				},
+				"Others": {
+					"name": "其他",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Communications"
+		},
+		"wlw": {
+			"display": "show",
+			"name": "物联网/车联网",
+			"child": {
+				"iov": {
+					"name": "车联网",
+					"trade": "new",
+					"display": "show",
+					"enName": "IOV"
+				},
+				"vrdevices": {
+					"name": "VR设备",
+					"trade": "new",
+					"display": "show",
+					"enName": "VR devices"
+				},
+				"zncd": {
+					"name": "智能穿戴",
+					"trade": "new",
+					"display": "show",
+					"enName": "Smart wearables"
+				},
+				"znjj": {
+					"name": "智慧家居",
+					"trade": "new",
+					"display": "show",
+					"enName": "Smart home"
+				},
+				"znyj": {
+					"name": "智能硬件",
+					"trade": "new",
+					"display": "hidden",
+					"enName": "Intelligent hardware"
+				},
+				"kcdsb": {
+					"name": "可穿戴设备",
+					"trade": "new",
+					"display": "hidden",
+					"enName": "Wearable devices"
+				},
+				"wlw": {
+					"name": "物联网/车联网",
+					"trade": "new",
+					"display": "hidden",
+					"enName": "IoT / IoV"
+				},
+				"wlwqt": {
+					"name": "其他",
+					"trade": "new",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "IoT/IoV"
+		},
+		"xfpscs": {
+			"display": "show",
+			"name": "消费品生产商",
+			"child": {
+				"spyl": {
+					"name": "食品饮料",
+					"trade": "other",
+					"display": "show",
+					"enName": "Food & beverage"
+				},
+				"ryhx": {
+					"name": "日用化学",
+					"trade": "other",
+					"display": "show",
+					"enName": "Household chemicals"
+				},
+				"Catering": {
+					"name": "餐饮",
+					"trade": "other",
+					"display": "show",
+					"enName": "Catering"
+				},
+				"fsbh": {
+					"name": "服饰百货",
+					"trade": "other",
+					"display": "show",
+					"enName": "Fashion"
+				},
+				"Agriculture": {
+					"name": "农业",
+					"trade": "other",
+					"display": "show",
+					"enName": "Agricultural products"
+				}
+			},
+			"enName": "Consumer goods manufacturers"
+		},
+		"hospital": {
+			"display": "show",
+			"name": "医疗",
+			"child": {
+				"ylyljg": {
+					"name": "医院/医疗机构",
+					"trade": "other",
+					"display": "show",
+					"enName": "Hospitals & authorities"
+				},
+				"tjjj": {
+					"name": "体检机构",
+					"trade": "other",
+					"display": "show",
+					"enName": "Healthcare"
+				},
+				"hxzy": {
+					"name": "化学/制药",
+					"trade": "other",
+					"display": "show",
+					"enName": "Medicine manufacturing"
+				},
+				"ylqx": {
+					"name": "医疗器械",
+					"trade": "other",
+					"display": "show",
+					"enName": "Medical instruments"
+				},
+				"smkx": {
+					"name": "生物科学",
+					"trade": "other",
+					"display": "show",
+					"enName": "Biology"
+				},
+				"jygc": {
+					"name": "基因工程",
+					"trade": "other",
+					"display": "show",
+					"enName": "Genetic engineering"
+				},
+				"zxyl": {
+					"name": "在线医疗",
+					"trade": "other",
+					"display": "show",
+					"enName": "Online medical care"
+				},
+				"hospital": {
+					"name": "医疗",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Medical services"
+				},
+				"others": {
+					"name": "其他医疗",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Medical services"
+		},
+		"mobileapp": {
+			"name": "移动应用",
+			"display": "show",
+			"child": {
+				"snsapp": {
+					"name": "社交通讯",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "Social networking"
+				},
+				"lifeapp": {
+					"name": "生活娱乐",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "Life and entertainment"
+				},
+				"sportapp": {
+					"name": "运动健康",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "Sports and Health"
+				},
+				"lrmy": {
+					"name": "丽人母婴",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "Maternal & children"
+				},
+				"newsapp": {
+					"name": "新闻阅读",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "News & books"
+				},
+				"imageapp": {
+					"name": "图片图像",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "Image processing"
+				},
+				"sysapp": {
+					"name": "系统工具",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "System"
+				},
+				"marketapp": {
+					"name": "应用市场",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "App stores"
+				},
+				"sjzs": {
+					"name": "手机助手",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "Mobile assistants"
+				},
+				"otherapp": {
+					"name": "其他应用",
+					"trade": "mobile",
+					"display": "show",
+					"enName": "Others"
+				},
+				"mobileapp": {
+					"name": "移动应用",
+					"trade": "mobile",
+					"display": "hidden",
+					"enName": "Apps"
+				},
+				"musicapp": {
+					"name": "音乐音频",
+					"trade": "mobile",
+					"display": "hidden",
+					"enName": "Music"
+				},
+				"toolsapp": {
+					"name": "工具应用",
+					"trade": "mobile",
+					"display": "hidden",
+					"enName": "Tools"
+				}
+			},
+			"enName": "Apps"
+		},
+		"cloud": {
+			"display": "show",
+			"name": "云服务",
+			"child": {
+				"ycs": {
+					"name": "云厂商",
+					"trade": "other",
+					"display": "show",
+					"enName": "Cloud service providers"
+				}
+			},
+			"enName": "Cloud services"
+		},
+		"zfggjg": {
+			"display": "show",
+			"name": "政府公共机构",
+			"child": {
+				"dfzf": {
+					"name": "地方政府",
+					"trade": "other",
+					"display": "show",
+					"enName": "Local governments"
+				},
+				"bw": {
+					"name": "部委",
+					"trade": "other",
+					"display": "show",
+					"enName": "Ministries / commissions"
+				}
+			},
+			"enName": "Governments & Public institutions"
+		},
+		"zzy": {
+			"display": "show",
+			"name": "制造业",
+			"child": {
+				"jggf": {
+					"name": "军工国防",
+					"trade": "other",
+					"display": "show",
+					"enName": "Military industry"
+				},
+				"qcy": {
+					"name": "汽车业",
+					"trade": "other",
+					"display": "show",
+					"enName": "Automobile industry"
+				},
+				"bdtdzgf": {
+					"name": "半导体电子/光伏",
+					"trade": "other",
+					"display": "show",
+					"enName": "Industrial electronics"
+				},
+				"xfdzjd": {
+					"name": "消费电子/家电",
+					"trade": "other",
+					"display": "show",
+					"enName": "Home electronics / applicances"
+				},
+				"wbzzfw": {
+					"name": "外包制造服务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Outsourcing"
+				},
+				"hg": {
+					"name": "化工",
+					"trade": "other",
+					"display": "show",
+					"enName": "Chemical industry"
+				},
+				"zxsbzbzz": {
+					"name": "重型设备/装备制造",
+					"trade": "other",
+					"display": "show",
+					"enName": "Heavy equipment "
+				},
+				"nypzz": {
+					"name": "耐用品制造",
+					"trade": "other",
+					"display": "show",
+					"enName": "Durable goods "
+				},
+				"gypzz": {
+					"name": "工业品制造",
+					"trade": "other",
+					"display": "show",
+					"enName": "Light equipment & tools"
+				},
+				"others": {
+					"name": "其他制造",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Manufacturing"
+		},
+		"zrzy": {
+			"display": "show",
+			"name": "自然资源",
+			"child": {
+				"ck": {
+					"name": "采矿",
+					"trade": "other",
+					"display": "show",
+					"enName": "Mining"
+				},
+				"yjhgt": {
+					"name": "冶金和钢铁",
+					"trade": "other",
+					"display": "show",
+					"enName": "Metals & alloys"
+				},
+				"zzhly": {
+					"name": "造纸和林业",
+					"trade": "other",
+					"display": "show",
+					"enName": "Paper & forest products"
+				},
+				"jzcl": {
+					"name": "建筑材料",
+					"trade": "other",
+					"display": "show",
+					"enName": "Building materials"
+				},
+				"syhtrq": {
+					"name": "石油和天然气",
+					"trade": "other",
+					"display": "show",
+					"enName": "Petroleum & natural gas"
+				}
+			},
+			"enName": "Natural resources"
+		},
+		"render": {
+			"name": "渲染",
+			"display": "hidden",
+			"child": {
+				"moviemake": {
+					"name": "电影制作",
+					"trade": "videoedu",
+					"display": "show",
+					"enName": "Movie making"
+				},
+				"gamerender": {
+					"name": "游戏渲染",
+					"trade": "other",
+					"display": "show",
+					"enName": "Game rendering"
+				},
+				"3ddesign": {
+					"name": "3D设计",
+					"trade": "other",
+					"display": "show",
+					"enName": "3ddesign"
+				},
+				"otherrender": {
+					"name": "其他",
+					"trade": "other",
+					"display": "show",
+					"enName": "otherrender"
+				}
+			},
+			"enName": "Rendering"
+		},
+		"website": {
+			"display": "hidden",
+			"name": "网站/社区",
+			"child": {
+				"weixincloud": {
+					"name": "微信云",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "WeChat Cloud"
+				},
+				"portal": {
+					"name": "门户",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Portal websites"
+				},
+				"bbs": {
+					"name": "论坛",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Forums"
+				},
+				"blog": {
+					"name": "博客",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Blog"
+				},
+				"sns": {
+					"name": "社交网站",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Social websites"
+				},
+				"qygw": {
+					"name": "企业官网",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Enterprise official websites"
+				},
+				"websiteother": {
+					"name": "其他",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "Others"
+				},
+				"website": {
+					"name": "网站/社区",
+					"trade": "other",
+					"display": "show",
+					"enName": "Websites"
+				}
+			},
+			"enName": "Websites"
+		},
+		"zwms": {
+			"display": "hidden",
+			"name": "政务民生",
+			"child": {
+				"policy": {
+					"name": "党政军及涉外机构",
+					"trade": "other",
+					"display": "show",
+					"enName": "Politic organizations"
+				},
+				"farming": {
+					"name": "农林牧渔",
+					"trade": "other",
+					"display": "show",
+					"enName": "Agriculture"
+				},
+				"oil": {
+					"name": "矿产油气",
+					"trade": "other",
+					"display": "show",
+					"enName": "Minerals"
+				},
+				"energy": {
+					"name": "水电能源",
+					"trade": "other",
+					"display": "show",
+					"enName": "Energy"
+				},
+				"research": {
+					"name": "科研技术服务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Science"
+				},
+				"public": {
+					"name": "公共民生服务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Public citizen services"
+				},
+				"otherzwms": {
+					"name": "其他政务民生",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Government services"
+		},
+		"hzhb": {
+			"display": "hidden",
+			"name": "渠道",
+			"child": {
+				"hzhb": {
+					"name": "渠道",
+					"trade": "other",
+					"display": "show",
+					"enName": "Channels"
+				}
+			},
+			"enName": "Channels"
+		},
+		"syfw": {
+			"name": "商业服务",
+			"display": "hidden",
+			"child": {
+				"zjfw": {
+					"name": "中介服务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Agencies"
+				},
+				"hyjjfa": {
+					"name": "行业解决方案",
+					"trade": "other",
+					"display": "show",
+					"enName": "Industry solutions"
+				},
+				"wbfw": {
+					"name": "外包服务",
+					"trade": "other",
+					"display": "show",
+					"enName": "Out-source services"
+				},
+				"jcrz": {
+					"name": "检测/认证",
+					"trade": "other",
+					"display": "show",
+					"enName": "Examine / verification"
+				},
+				"syrjkf": {
+					"name": "商业软件开发商",
+					"trade": "other",
+					"display": "show",
+					"enName": "Business software developer"
+				},
+				"ylsw": {
+					"name": "医疗/生物",
+					"trade": "other",
+					"display": "show",
+					"enName": "Medical / Biology"
+				},
+				"othersyfw": {
+					"name": "其他",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Business services"
+		},
+		"fdcjz": {
+			"display": "hidden",
+			"name": "房地产/建筑",
+			"child": {
+				"fdcjz": {
+					"name": "房地产/建筑",
+					"trade": "other",
+					"display": "show",
+					"enName": "Real estate"
+				}
+			},
+			"enName": "Real estate"
+		},
+		"lszlmy": {
+			"name": "零售/租赁/贸易",
+			"display": "hidden",
+			"child": {
+				"lszlmy": {
+					"name": "零售/租赁/贸易",
+					"trade": "other",
+					"display": "show",
+					"enName": "Retail / renting / trading"
+				}
+			},
+			"enName": "Retail/renting/trading"
+		},
+		"scjgzz": {
+			"display": "hidden",
+			"name": "生产/加工/制造",
+			"child": {
+				"scjgzz": {
+					"name": "生产/加工/制造",
+					"trade": "other",
+					"display": "show",
+					"enName": "Producing / processing"
+				}
+			},
+			"enName": "Producing/processing"
+		},
+		"jtwl": {
+			"display": "hidden",
+			"name": "交通/物流",
+			"child": {
+				"jtwl": {
+					"name": "交通/物流",
+					"trade": "other",
+					"display": "show",
+					"enName": "Transportation / Logistics"
+				}
+			},
+			"enName": "Transportation/Logistics"
+		},
+		"nydq": {
+			"display": "hidden",
+			"name": "能源/电气",
+			"child": {
+				"nydq": {
+					"name": "能源/电气",
+					"trade": "other",
+					"display": "show",
+					"enName": "Energy / Electricity"
+				}
+			},
+			"enName": "Energy/Electricity"
+		},
+		"zfqy": {
+			"display": "hidden",
+			"name": "政府企业",
+			"child": {
+				"zfqy": {
+					"name": "政府企业",
+					"trade": "other",
+					"display": "show",
+					"enName": "Government-owned enterprises"
+				}
+			},
+			"enName": "Government-owned enterprises"
+		},
+		"ny": {
+			"display": "hidden",
+			"name": "农业",
+			"child": {
+				"ny": {
+					"name": "农业",
+					"trade": "other",
+					"display": "show",
+					"enName": "Agriculture"
+				}
+			},
+			"enName": "Agriculture"
+		},
+		"ctqy": {
+			"display": "hidden",
+			"name": "传统企业",
+			"child": {
+				"ctqy": {
+					"name": "传统企业",
+					"trade": "other",
+					"display": "show"
+				}
+			}
+		},
+		"sddzy": {
+			"display": "hidden",
+			"name": "深度定制云",
+			"child": {
+				"sddzy": {
+					"name": "深度定制云",
+					"trade": "other",
+					"display": "show"
+				}
+			}
+		},
+		"intl": {
+			"display": "hidden",
+			"name": "国际版业务",
+			"child": {
+				"intl": {
+					"name": "国际版业务",
+					"trade": "other",
+					"display": "hidden",
+					"enName": "International Business"
+				}
+			},
+			"enName": "International Business"
+		},
+		"other": {
+			"display": "show",
+			"name": "其他",
+			"child": {
+				"other": {
+					"name": "其他",
+					"trade": "other",
+					"display": "show",
+					"enName": "Others"
+				}
+			},
+			"enName": "Others"
+		}
+	}
+}

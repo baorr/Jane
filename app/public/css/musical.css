@@ -1,0 +1,564 @@
+/* 
+* From https://css-tricks.com/snippets/sass/fix-number-n-digits/ 
+*/
+/*reset*/
+body, html, p {
+  padding: 0;
+  margin: 0; }
+
+ul, li, ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: #6a6a6a; }
+  a:hover {
+    color: #ff0f50; }
+  a[disabled], a.disabled, a[disabled]:hover, a.disabled:hover {
+    color: #6a6a6a;
+    opacity: 0.5;
+    cursor: default; }
+
+/*page*/
+.wrapper {
+  background-color: #f39191; }
+
+header {
+  height: 70px;
+  padding: 0 48px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  box-sizing: border-box; }
+  header > label {
+    position: absolute;
+    display: none;
+    right: 30px;
+    top: 20px; }
+    header > label::before {
+      content: "";
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      width: 20px;
+      height: 3px;
+      display: block; }
+    header > label::after {
+      content: "";
+      border-top: 2px solid white;
+      width: 20px;
+      border-top: 2px solid white;
+      display: block;
+      margin: 3px 0 0 0; }
+  header > input {
+    display: none; }
+  header ul {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    position: relative; }
+    header ul li {
+      display: inline-block;
+      *display: inline;
+      /* IE < 8: fake inline-block */
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: bottom;
+      text-rendering: auto;
+      height: 70px;
+      line-height: 70px;
+      min-width: 72px;
+      text-align: center; }
+      header ul li:first-child {
+        position: absolute;
+        right: 0; }
+        header ul li:first-child .toggle {
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          width: 100px;
+          height: 30px;
+          padding: 3px;
+          border-radius: 18px;
+          cursor: pointer;
+          box-sizing: content-box; }
+          header ul li:first-child .toggle .toggle-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            box-sizing: content-box; }
+            header ul li:first-child .toggle .toggle-input:checked ~ .toggle-label {
+              background: #3d70b2; }
+              header ul li:first-child .toggle .toggle-input:checked ~ .toggle-label::before {
+                opacity: 0; }
+              header ul li:first-child .toggle .toggle-input:checked ~ .toggle-label::after {
+                opacity: 1; }
+            header ul li:first-child .toggle .toggle-input:checked ~ .toggle-handle {
+              background: white;
+              left: 74px; }
+            header ul li:first-child .toggle .toggle-input:disabled ~ .toggle-label, header ul li:first-child .toggle .toggle-input:disabled ~ .toggle-handle {
+              opacity: 0.5; }
+          header ul li:first-child .toggle .toggle-handle {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 28px;
+            height: 28px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 100%; }
+          header ul li:first-child .toggle .toggle-label {
+            position: relative;
+            display: block;
+            height: inherit;
+            font-size: 10px;
+            text-transform: uppercase;
+            background: #8c9ba5;
+            border-radius: inherit;
+            box-sizing: content-box; }
+            header ul li:first-child .toggle .toggle-label::before, header ul li:first-child .toggle .toggle-label::after {
+              position: absolute;
+              top: 50%;
+              margin-top: -.5em;
+              line-height: 1;
+              -webkit-transition: inherit;
+              -moz-transition: inherit;
+              -o-transition: inherit;
+              transition: inherit;
+              box-sizing: content-box; }
+            header ul li:first-child .toggle .toggle-label::before {
+              content: attr(data-off);
+              right: 11px;
+              color: white; }
+            header ul li:first-child .toggle .toggle-label::after {
+              content: attr(data-on);
+              left: 11px;
+              color: white;
+              opacity: 0; }
+          header ul li:first-child .toggle .toggle-label, header ul li:first-child .toggle .toggle-handle {
+            transition: All 0.3s ease;
+            -webkit-transition: All 0.3s ease;
+            -moz-transition: All 0.3s ease;
+            -o-transition: All 0.3s ease; }
+          header ul li:first-child .toggle[data-role="disabled"] {
+            cursor: auto; }
+        header ul li:first-child .toggle.toggle-light {
+          padding: 0;
+          background: transparent; }
+          header ul li:first-child .toggle.toggle-light .toggle-handle {
+            top: 6px;
+            left: 72px;
+            background: #8c9ba5;
+            width: 22px;
+            height: 22px;
+            box-shadow: none; }
+            header ul li:first-child .toggle.toggle-light .toggle-handle::before {
+              background: #eceeef; }
+          header ul li:first-child .toggle.toggle-light .toggle-label {
+            border: solid 2px #f5f7fa;
+            box-shadow: none;
+            background: transparent; }
+            header ul li:first-child .toggle.toggle-light .toggle-label::after {
+              color: #3d70b2; }
+            header ul li:first-child .toggle.toggle-light .toggle-label::before {
+              right: inherit;
+              left: 11px;
+              color: #5a6872; }
+          header ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label {
+            border-color: #3d70b2;
+            background: transparent; }
+            header ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label::before {
+              background: rgba(255, 255, 255, 0.7); }
+          header ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-handle {
+            left: 72px;
+            box-shadow: none;
+            background: #3d70b2; }
+        header ul li:first-child .toggle {
+          width: 50px;
+          height: 22px; }
+          header ul li:first-child .toggle.toggle-light {
+            vertical-align: middle; }
+            header ul li:first-child .toggle.toggle-light .toggle-label {
+              width: 50px;
+              height: 22px;
+              border: 1px solid white; }
+              header ul li:first-child .toggle.toggle-light .toggle-label::before {
+                left: 11px;
+                color: white; }
+              header ul li:first-child .toggle.toggle-light .toggle-label::after {
+                left: 15px; }
+            header ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label {
+              border-color: white; }
+              header ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label::after {
+                color: white; }
+      header ul li a {
+        color: white;
+        font-weight: 700;
+        font-size: 0.875em;
+        opacity: 0.6;
+        display: block;
+        cursor: pointer;
+        text-decoration: none; }
+        header ul li a:hover, header ul li a.selected {
+          opacity: 1;
+          color: white; }
+
+.content {
+  padding: 70px 0; }
+  .content .content-wrapper {
+    margin: 0 auto;
+    max-width: 745px;
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start; }
+    .content .content-wrapper .show {
+      display: inline-block;
+      *display: inline;
+      /* IE < 8: fake inline-block */
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: bottom;
+      text-rendering: auto;
+      display: none; }
+      .content .content-wrapper .show .iphone {
+        position: relative;
+        background-color: white;
+        border-radius: 40px;
+        padding: 70px 11px 0 11px;
+        width: 220px;
+        height: 475px;
+        box-shadow: 4px 6px 36px 14px rgba(235, 0, 70, 0.1); }
+        .content .content-wrapper .show .iphone::before, .content .content-wrapper .show .iphone::after {
+          position: absolute;
+          background-color: #dedede;
+          content: ""; }
+        .content .content-wrapper .show .iphone::before {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          top: 37px;
+          left: 90px; }
+        .content .content-wrapper .show .iphone::after {
+          width: 50px;
+          height: 3px;
+          top: 39px;
+          left: 110px; }
+        .content .content-wrapper .show .iphone .device-screen video {
+          width: 100%;
+          border-radius: 5px; }
+        .content .content-wrapper .show .iphone .device-bot {
+          margin: 0 auto;
+          width: 40px;
+          height: 40px;
+          border: 4px solid #dedede;
+          border-radius: 50%;
+          transform: translateY(15px); }
+      .content .content-wrapper .show .iphone {
+        margin: 0 auto; }
+    .content .content-wrapper .fun {
+      padding: 0;
+      text-align: center;
+      display: inline-block;
+      *display: inline;
+      /* IE < 8: fake inline-block */
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: bottom;
+      text-rendering: auto;
+      width: 100%;
+      *width: 99.969%; }
+      .content .content-wrapper .fun .iphone {
+        position: relative;
+        background-color: white;
+        border-radius: 40px;
+        padding: 70px 11px 0 11px;
+        width: 220px;
+        height: 475px;
+        box-shadow: 4px 6px 36px 14px rgba(235, 0, 70, 0.1); }
+        .content .content-wrapper .fun .iphone::before, .content .content-wrapper .fun .iphone::after {
+          position: absolute;
+          background-color: #dedede;
+          content: ""; }
+        .content .content-wrapper .fun .iphone::before {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          top: 37px;
+          left: 90px; }
+        .content .content-wrapper .fun .iphone::after {
+          width: 50px;
+          height: 3px;
+          top: 39px;
+          left: 110px; }
+        .content .content-wrapper .fun .iphone .device-screen video {
+          width: 100%;
+          border-radius: 5px; }
+        .content .content-wrapper .fun .iphone .device-bot {
+          margin: 0 auto;
+          width: 40px;
+          height: 40px;
+          border: 4px solid #dedede;
+          border-radius: 50%;
+          transform: translateY(15px); }
+      .content .content-wrapper .fun .logo {
+        padding: 0 0 40px 0; }
+        .content .content-wrapper .fun .logo img {
+          width: 100px; }
+        .content .content-wrapper .fun .logo p {
+          font-size: 1.125em;
+          color: white; }
+      .content .content-wrapper .fun .downlods p {
+        padding: 0 0 20px 0; }
+        .content .content-wrapper .fun .downlods p a {
+          width: 200px;
+          display: inline-block;
+          padding: 14px 20px;
+          font-size: 1.25em;
+          color: white;
+          text-decoration: none;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 50px; }
+          .content .content-wrapper .fun .downlods p a:hover {
+            background-color: rgba(255, 255, 255, 0.15); }
+
+footer {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 24px 0 8px; }
+  footer > p {
+    color: #bbbbbb;
+    text-align: center;
+    font-size: 0.75em; }
+  footer .footer-wrapper {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    margin: 0 4%;
+    padding: 0 0 24px 0; }
+    footer .footer-wrapper ul {
+      display: inline-block;
+      *display: inline;
+      /* IE < 8: fake inline-block */
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: bottom;
+      text-rendering: auto;
+      width: 100%;
+      *width: 99.969%; }
+      footer .footer-wrapper ul li {
+        text-align: center;
+        padding: 0 24px; }
+        footer .footer-wrapper ul li a {
+          text-decoration: none;
+          font-size: 0.75em;
+          padding: 6px 0; }
+        footer .footer-wrapper ul li h2 {
+          color: #303030;
+          font-size: 0.875em;
+          font-weight: 700;
+          padding: 6px 0 12px; }
+
+@media screen and (min-width: 48em) {
+  footer .footer-wrapper {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start; }
+    footer .footer-wrapper ul {
+      width: 25%;
+      *width: 24.969%; }
+      footer .footer-wrapper ul li {
+        text-align: left; } }
+
+@media screen and (min-width: 62em) {
+  .content .content-wrapper .show {
+    width: 50%;
+    *width: 49.969%;
+    display: block; }
+  .content .content-wrapper .fun {
+    padding: 75px 0 0 0;
+    width: 50%;
+    *width: 49.969%; }
+    .content .content-wrapper .fun .iphone {
+      position: relative;
+      background-color: white;
+      border-radius: 40px;
+      padding: 70px 11px 0 11px;
+      width: 220px;
+      height: 475px;
+      box-shadow: 4px 6px 36px 14px rgba(235, 0, 70, 0.1); }
+      .content .content-wrapper .fun .iphone::before, .content .content-wrapper .fun .iphone::after {
+        position: absolute;
+        background-color: #dedede;
+        content: ""; }
+      .content .content-wrapper .fun .iphone::before {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        top: 37px;
+        left: 90px; }
+      .content .content-wrapper .fun .iphone::after {
+        width: 50px;
+        height: 3px;
+        top: 39px;
+        left: 110px; }
+      .content .content-wrapper .fun .iphone .device-screen video {
+        width: 100%;
+        border-radius: 5px; }
+      .content .content-wrapper .fun .iphone .device-bot {
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #dedede;
+        border-radius: 50%;
+        transform: translateY(15px); } }
+
+@media screen and (max-width: 62em) {
+  header > label {
+    display: block;
+    cursor: pointer; }
+  header ul {
+    transform: scale(0);
+    transition: all 0.1s;
+    right: 18px;
+    top: 44px;
+    position: absolute; }
+  header > input[type="checkbox"]:checked ~ ul {
+    transform: scale(1);
+    right: 18px;
+    top: 44px;
+    width: 300px;
+    background: white;
+    border-radius: 3px; }
+    header > input[type="checkbox"]:checked ~ ul::before {
+      border: 6px solid white;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      display: block;
+      position: absolute;
+      right: 16px;
+      content: "";
+      top: -12px; }
+    header > input[type="checkbox"]:checked ~ ul li {
+      height: 42px;
+      line-height: 42px;
+      width: 100%;
+      text-align: center; }
+      header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light {
+        vertical-align: middle; }
+        header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-label {
+          border: 1px solid #666666; }
+          header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-label::before {
+            left: 11px;
+            color: #666666; }
+          header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-label::after {
+            left: 15px; }
+          header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-label:hover {
+            border-color: #ff0f50; }
+            header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-label:hover::before {
+              color: #ff0f50; }
+            header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-label:hover::after {
+              color: #ff0f50; }
+        header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label {
+          border-color: #666666; }
+          header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label::after {
+            color: #666666; }
+          header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label:hover {
+            border-color: #ff0f50; }
+            header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label:hover::before {
+              color: #ff0f50; }
+            header > input[type="checkbox"]:checked ~ ul li:first-child .toggle.toggle-light .toggle-input:checked ~ .toggle-label:hover::after {
+              color: #ff0f50; }
+      header > input[type="checkbox"]:checked ~ ul li:first-child {
+        position: relative; }
+        header > input[type="checkbox"]:checked ~ ul li:first-child a {
+          text-align: center; }
+      header > input[type="checkbox"]:checked ~ ul li a {
+        color: #666666;
+        display: block;
+        padding: 0 16px 0 24px;
+        border-right: 2px solid transparent;
+        text-align: left; }
+        header > input[type="checkbox"]:checked ~ ul li a.selected {
+          background-color: #fdeef1;
+          border-right: 2px solid #ff0f50;
+          color: #ff0f50; }
+        header > input[type="checkbox"]:checked ~ ul li a:hover {
+          color: #ff0f50; } }
+
+@-webkit-keyframes bgAnimation___3emRn {
+  0% {
+    background-position: 0 50%; }
+  to {
+    background-position: 100% 50%; } }
+
+@keyframes bgAnimation___3emRn {
+  0% {
+    background-position: 0 50%; }
+  to {
+    background-position: 100% 50%; } }
+
+.theme-animation___1utsH {
+  background: #ff3f71;
+  background-image: linear-gradient(120deg, #ff2d60, #ff9132, #ff61fa, #6caafd, #29ccff, #1deab9);
+  background-repeat: no-repeat;
+  background-size: 800% 400%;
+  -webkit-animation-name: bgAnimation___3emRn;
+  animation-name: bgAnimation___3emRn;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-play-state: running; }
+
+.live-theme {
+  background: #ff63fa;
+  background: linear-gradient(135deg, #ff63fa, #4ed8fc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF63FA",endColorstr="#4ED8FC",GradientType=1); }

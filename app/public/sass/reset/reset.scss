@@ -1,0 +1,35 @@
+@mixin reset-body{
+	body, html, p{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@mixin anchor{
+	a{
+		color: $anchor-color;
+		&:hover{
+			color: $anchor-hover-color;
+		}
+		&[disabled], &.disabled, &[disabled]:hover, &.disabled:hover{
+			color: $anchor-color;
+			opacity: 0.5;
+      		cursor: default;
+		};
+	}
+};
+
+@mixin hightitle{
+	h1, h2, h3, h4, h5{
+		padding: 0;
+		margin: 0;
+	}
+};
+
+@mixin lists-item{
+	ul, li, ol{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+};

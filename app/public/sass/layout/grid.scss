@@ -1,0 +1,29 @@
+//from purecss
+@mixin grid{
+    letter-spacing: -0.31em;       /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;       /* reset IE < 8 */
+    *word-spacing: -0.43em;        /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+@mixin grid-unit{
+    display: inline-block;
+    *display: inline;         /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: bottom;
+    text-rendering: auto;
+}
+
+@mixin grid-column($rowof, $rows){
+	$white-space: 0.031%;
+	$unit: (100% / $rows);
+
+	width: to-fixed($unit * $rowof);
+    *width: to-fixed($unit * $rowof - $white-space);
+}
+

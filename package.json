@@ -1,0 +1,78 @@
+{
+    "name": "Jane",
+    "version": "1.0.0",
+    "description": "云市场",
+    "private": true,
+    "dependencies": {
+        "babel-loader": "^7.1.2",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.6.1",
+        "egg": "^1.7.0",
+        "egg-init": "^1.12.0",
+        "egg-redis": "^1.0.2",
+        "egg-scripts": "^1.0.0",
+        "egg-validate": "^1.0.0",
+        "egg-view-nunjucks": "^2.1.3",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "gulp": "^3.9.1",
+        "gulp-babel": "^7.0.0",
+        "i18n-webpack-plugin": "^1.0.0",
+        "imports-loader": "^0.7.1",
+        "jsonwebtoken": "^7.4.3",
+        "node-xlsx": "^0.11.0"
+    },
+    "devDependencies": {
+        "autod": "^2.9.0",
+        "autod-egg": "^1.0.0",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-es2015-webpack": "^6.4.3",
+        "babelify": "^8.0.0",
+        "compression-webpack-plugin": "^1.0.1",
+        "egg-bin": "^4.1.0",
+        "egg-ci": "^1.8.0",
+        "egg-mock": "^3.9.0",
+        "eslint": "^4.5.0",
+        "eslint-config-egg": "^5.0.0",
+        "gulp-browserify": "^0.5.1",
+        "gulp-requirejs-optimize": "^1.2.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-wrap-commonjs": "^0.1.14",
+        "node-sass": "^4.7.2",
+        "sass-loader": "^6.0.6",
+        "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+        "webpack": "^3.9.1",
+        "webstorm-disable-index": "^1.2.0"
+    },
+    "engines": {
+        "node": ">=6.0.0"
+    },
+    "scripts": {
+        "start": "egg-scripts start",
+        "stop": "egg-scripts stop",
+        "dev": "egg-bin dev",
+        "icp": "egg-bin icp",
+        "test": "egg-bin -v",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "build": "node build.js",
+        "babel-build": "babel ./config/locales/ -d ./app/public/js/locales/",
+        "ci": "npm run lint && npm run cov",
+        "autod": "autod",
+        "g_sass": "gulp sass",
+        "g_musical": "gulp musical",
+        "g_ui": "gulp ui",
+        "g_js": "gulp js"
+    },
+    "ci": {
+        "version": "6, 8"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "liyu",
+    "license": "MIT"
+}

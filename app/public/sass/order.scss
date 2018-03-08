@@ -1,0 +1,142 @@
+@import "layout.scss";
+@import "reset";
+@import "button.scss";
+@import "menu.scss";
+
+@import "header.scss";
+@import "footer.scss";
+@import "tab.scss";
+@import "notice.scss";
+@import "table.scss";
+@import "accordion.scss";
+@import "loading.scss";
+
+@include reset;
+@include header;
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:rgba(50, 50, 50, 1);
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    border: 1px solid #0869ff;
+    cursor:pointer;
+    text-align: center;
+}
+
+input[type="checkbox"]:checked + label span {
+    background-color: #0869ff;
+}
+
+input[type="checkbox"]:checked + label span::before{
+    content: "✓";
+    color: rgba(255, 255, 255, 1);
+}
+
+main{
+	> .wrapper{
+		margin: 0 auto;
+		div[class*="order-"]{
+			max-width: 1296px;
+			margin: 0 auto 2em;
+			> .wrapper{
+				background-color: rgba(255, 255, 255, 1);
+				padding: 1.25em;
+				> ul li{
+					padding: 13px 20px 18px;
+					border-bottom: 1px solid rgba(241, 241, 241, 1);
+				}
+			}
+		}
+		.order-other{
+			background-color: rgba(255, 255, 255, 1);
+			min-height: 140px;
+			position: relative;
+			.loading-ball{
+				@include loading-ball-css;
+			};
+			@include accordion;
+			.accordion .item > label{
+				background-color: rgba(255, 255, 255, 1);
+				color: rgba(8, 105, 255, 1);
+				border: 0;
+				&:hover{
+					background-color: rgba(255, 255, 255, 1);
+				}
+
+				&::before{
+					content: "+";
+					color: rgba(255, 255, 255, 1);
+				    display: inline-block;
+				    background-color:rgba(8, 105, 255, 1);
+				    width: 18px;
+				    height: 18px;
+				    text-align: center;
+				    line-height: 14px;
+				    border-radius: 12px;
+				    font-size: 16px;
+				    margin: 0 5px 0 0;
+				    position: relative;
+    				top: -2px;
+    				font-weight: bolder;
+				}
+
+			}
+
+			.payment-wrapper{
+				padding: 20px 16px;
+				.payment{
+					text-align: right;
+					button {
+						@include primary-button;
+						background-color:rgba(8, 105, 255, 1);
+						color: rgba(255, 255, 255, 1);
+						&:hover{
+					  		background-color: rgba(8, 105, 255, 1);
+					  		color: rgba(255, 255, 255, 1);
+					  	}
+					    text-align: center;
+					    padding: 10px 30px;
+					    border-radius: 0;
+					    border: 0;
+					    margin-left: 10px;
+					}
+				}
+			}
+		}
+
+		.order-list{
+			background-color: rgba(255, 255, 255, 1);
+			min-height: 77px;
+			position: relative;
+			.loading-ball{
+				@include loading-ball-css;
+			};
+			@include table;	
+			> .wrapper.nopadding{
+				padding: 0;
+			}
+		}
+		.order-title{
+			> .wrapper.nopadding{
+				padding: 1.25em 0 0 0;
+				background-color: rgba(255, 255, 255, 0);
+			}
+		}		
+	}
+}
+
+@include footer;
+
+@media screen and (min-width: 48em) {
+     @include respFooter;
+}

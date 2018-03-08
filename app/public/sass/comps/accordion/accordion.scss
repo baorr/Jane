@@ -1,0 +1,46 @@
+@mixin accordion{
+	.accordion{
+	   	ul{
+	   	    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		    border-top: 1px solid $accordion-border-color;
+		    border-left: 1px solid $accordion-border-color;
+		    border-right: 1px solid $accordion-border-color;
+		    label{
+		    	background-color: $accordion-label-background-color;
+			    color: $accordion-label-font-color;
+			    display: block;
+			    padding: 10px;
+			    + input[type='radio']{
+				    display: none;
+				    &:checked{
+				    	+ div.content {
+						   display: block;
+						}
+				    }
+				};
+				+ input[type='checkbox']{
+				    display: none;
+				    &:checked{
+				    	+ div.content {
+						   display: block;
+						}
+				    }
+				};
+				&:hover{
+					cursor: pointer;
+				}
+		    };
+			li{
+				background-color: $accordion-background-color;
+    			border-bottom: 1px solid $accordion-border-color;
+    			div.content {
+				    overflow: hidden;
+				    padding: 0 10px;
+				    display: none;
+				}
+			}
+	   	};
+	};
+}

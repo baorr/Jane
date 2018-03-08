@@ -1,0 +1,141 @@
+@import 'variable';
+@import 'utils/utils';
+@import 'theme/bluemix';
+
+@import 'layout/grid';
+
+@import 'comps/form/input';
+@import 'comps/form/text';
+@import 'comps/form/checkbox';
+@import 'comps/form/radio';
+@import 'comps/form/select';
+@import 'comps/button/button';
+@import 'comps/tips/tips';
+@import 'comps/table/table';
+@import 'comps/tab/tab';
+@import 'comps/switcher/switcher';
+@import 'comps/progress/progress';
+@import 'comps/toggle/toggle';
+@import 'comps/slider/slider';
+@import 'comps/accordion/accordion';
+@import 'comps/calendar/calendar';
+@import 'comps/popup/popup';
+
+@import 'reset/reset';
+
+
+@mixin placer20{
+	margin: 0 0 20px 0;
+}
+
+@include lists-item;
+@include input-reset;
+
+.placer{
+	@include placer20;
+}
+
+.inputs-wrapper{ 
+	//input
+	div[class*="-box"]{
+		@include placer20;
+	};
+
+	.input-box{
+		@include form-input;
+		input[type="text"]{
+			width: 420px;
+		}
+	}
+
+	//checkbox
+	.check-box{
+		@include form-checkbox;
+	}
+
+	//radio
+	.radio-box{
+		@include form-radio;
+	}
+
+	//select
+	.select-box{
+		@include form-select;
+	}
+}
+
+.buttons-wrapper{
+	.primary{
+		@include primary-button;
+	}
+	.secondary{
+		@include secondary-button;
+	}
+}
+
+.select-buttons-wrapper{
+	.select-list{
+		.item{
+			@include select-button;
+		}
+	}
+}
+
+.anchors-wrapper{
+	@include anchor;
+}
+
+.tips-wrapper{
+	@include notification;
+}
+
+.table-wrapper{
+	@include table;
+}
+
+.tab-wrapper{
+	@include tab;
+}
+
+.switcher-wrapper{
+	@include switcher;
+}
+
+.progress-wrapper{
+	@include progress-increment-step;
+}
+
+.progress-flag-wrapper{
+	@include progress-flag-step;
+}
+
+.progress-navi-wrapper{
+	@include progress-navigation;
+}
+
+.toggle-wrapper{
+	@include form-toggle;
+	@include form-toggle-slide;
+	@include form-toggle-light;
+	@include form-toggle-rotate;
+}
+
+.slide-wrapper{
+	@include slider;
+}
+
+.accordion-wrapper{
+	@include accordion;
+}
+
+.calendar-wrapper{
+	@include calendar;
+}
+
+.pop-up-wrapper{
+	@include pop-up;
+}
+
+.pure-css-tab-wrapper{
+	@include pure-css-tab;
+}

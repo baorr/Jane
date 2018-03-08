@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="referrer" content="origin">
+  <title>musical.ly</title>
+  <link rel="stylesheet" type="text/css" href="/public/css/musical.css">
+ </head>
+ <body>
+      <div class="wrapper theme-animation___1utsH">
+          <header>
+            <label class="drop-menu" for="drop-menu"></label>
+            <input type="checkbox" id="drop-menu">
+            <ul class="drop-menu-list">
+                <li>
+                    <label id="locales" class="toggle toggle-light">
+                        <input class="toggle-input" type="checkbox" {% if ctx.locale == 'zh-cn' %} checked {% endif %}/>
+                        <span class="toggle-label" data-on="EN" data-off="中文"></span>
+                    </label>
+                </li>
+                <li>
+                    <a class="selected" href="/musical">{{__('HOME')}}</a>
+                </li>
+                <li>
+                    <a href="/live">{{__('LIVE')}}</a>
+                </li>
+            </ul>
+          </header>
+          <section class="content">
+              <div class="content-wrapper">
+                  <div class="show">
+                      <div class="iphone">
+                          <div class="device-screen">
+                            <video src="https://static.muscdn.com/website/static/musically.4a887658.mp4" autoplay="" loop="" poster="https://static.muscdn.com/website/static/musically-poster.81d5fdcb.jpg">your browser does not support the video tag</video>
+                          </div>
+                          <div class="device-bot">
+                            
+                          </div>
+                      </div>
+                  </div>
+                  <div class="fun">
+                      <div class="logo">
+                          {% if ctx.locale == 'en-us' %} 
+                              <img src="https://static.muscdn.com/website/static/musically.ca400829.png" style="width: 200px;" />
+                          {% else %}
+                             <img src="https://static.muscdn.com/website/static/muse.bfbfd2aa.png" />
+                          {% endif %}
+                          
+                          <p>{{__('HOME_ANNOUNCE')}}</p>
+                      </div>
+                      <div class="downlods">
+                          <p>
+                            <a title="苹果（iPhone）app下载" href="https://itunes.apple.com/cn/app/id835599320">iPhone</a>
+                          </p>
+                          <p>
+                            <a title="安卓（Android）apk下载" href="https://down.muscdn.com/android/apk/latest/AppMusically-muse-release.apk">Android</a>
+                          </p>
+                          {% if ctx.locale == 'en-us' %} 
+                          <p>
+                            <a title="亚马逊下载" href="http://www.amazon.com/musical-ly-videos-instagram-facebook-messenger/dp/B0117U0G3M/ref=sr_1_2?ie=UTF8&qid=1436937782&sr=8-2&keywords=musical.ly">Amazon</a>
+                          </p>
+                          {% endif %}
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <footer>
+            <div class="footer-wrapper">
+                <ul>
+                  <li>
+                      <h2>公司</h2>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/about">
+                          关于muse
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/for-parents">
+                        For Parents
+                      </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                      <h2>法律</h2>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/term">
+                          用户使用条款
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/privacy">
+                          隐私条款
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/copyright">
+                          版权
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/opensource">
+                          开源软件
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/giftpointspolicy">
+                        Gift Points Policy
+                      </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <h2>
+                        社区
+                    </h2>
+                  </li>
+                  <li>
+                      <a href="https://support.musical.ly/knowledge-base/community-guidelines/">
+                          社区指南
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://support.musical.ly">
+                          用户支持
+                      </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                      <h2>
+                          商务合作
+                      </h2>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/branding">
+                          muse品牌
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/zh-CN/contact">
+                          联系我们
+                      </a>
+                  </li>
+                </ul>
+            </div>
+            <p>沪ICP备13030566号-4</p>
+          </footer>
+      </div>
+      <script>
+        
+        (function(){
+
+          var qmatches = function(element, selector){
+            if (!selector || !element || element.nodeType !== 1) return false
+            var matchesSelector = element.matches || element.webkitMatchesSelector ||
+                                  element.mozMatchesSelector || element.oMatchesSelector ||
+                                  element.matchesSelector
+            if (matchesSelector) return matchesSelector.call(element, selector);
+          };
+
+          //drop-menu
+          var dropMenu = document.querySelector('#drop-menu');
+          var locales = document.querySelector('#locales > input');
+          window.addEventListener('click', function(e){
+
+              if(!qmatches(e.target, 'label.drop-menu, #drop-menu, ul.drop-menu-list, ul.drop-menu-list li *') && dropMenu.checked){
+                  dropMenu.checked = false;
+              }
+
+              if(qmatches(e.target, '#locales *')){
+                 var href = location.href;
+                 var n = new Date();
+                 var localeInfo = 'locale=zh-cn;';
+                 n.setFullYear(n.getFullYear() + 1);
+                 if(!locales.checked){
+                    localeInfo = 'locale=en-us;';
+                 }
+
+                document.cookie = localeInfo + ' expires=' + n;
+                setTimeout(function(){
+                    location.href = href;
+                }, 0);
+              }
+
+          });
+
+        }())
+
+      </script>
+ </body>
+</html>

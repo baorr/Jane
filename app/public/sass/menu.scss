@@ -1,0 +1,48 @@
+@import "variable.scss";
+@import "layout.scss";
+
+@mixin navi {
+	
+	ul{
+		@include pure-g;
+	}
+
+	ul li{
+		@include pure-u;
+	}
+
+	ul li a{
+		display: block;
+		padding: 24px;
+		font-size: 0.875em;
+		color: rgba(255, 255, 255, 1);
+		text-decoration: none;
+		border-bottom: 2px solid transparent;
+	}
+
+	ul li.market{
+		text-align: center;
+		padding: 0 0 0 16px;
+		color: rgba(255, 255, 255, 1);
+		h3{
+			letter-spacing: 6px;
+			padding: 12px 0 0;
+			font-size: 150%;
+			font-weight: 600;
+		}
+		p{	
+			transform: scale(0.625) translateX(-5px) translateY(-8px); 
+			-webkit-transform: scale(0.625) translateX(-5px) translateY(-8px);  
+			-ms-transform: scale(0.625) translateX(-5px) translateY(-8px); 
+		}
+	}
+
+	ul li.search{
+		text-align: right;
+	}
+
+	ul li a:hover{
+		border-bottom: 2px solid rgba(8, 105, 255, 1);
+	}
+
+}

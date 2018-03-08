@@ -1,0 +1,81 @@
+@import "layout.scss";
+@import "reset";
+@import "button.scss";
+@import "menu.scss";
+
+@import "header.scss";
+@import "footer.scss";
+
+@include reset
+@include header;
+
+.product{
+	margin: 0 auto;
+	ul {
+		@include pure-g;
+		max-width: 1296px;
+		margin: 0 auto;
+		li{
+			width: 100%;
+			display: inline-block;
+	        zoom: 1;
+	        letter-spacing: normal;
+	        word-spacing: normal;
+	        vertical-align: top;
+	        text-rendering: auto;
+	        section{
+	        	margin: 0.5em;
+	        	border: 1px solid rgba(231, 231, 231, 1);
+	        	.product-description{
+	        		text-align: center;
+	        	}
+
+	        	h4, p{
+	        		margin: 0;
+	        		padding: 0.8em 0;
+				    background: rgba(247, 247, 247, 1);
+				    border-bottom: 1px solid rgba(231, 231, 231, 1);
+				    color: rgba(82, 96, 102, 1);
+	        	}
+	        	p:last-child{
+	        		margin: 0;
+	        		padding: 0.8em 0;
+				    background: rgba(255, 255, 255, 1);
+				    border-bottom: none;
+				    color: rgba(82, 96, 102, 1);
+	        	}
+
+	        	p{
+	        		a{
+        			    border: 1px solid rgba(204, 204, 204, 1);
+					    background: #fff;
+					    color: rgba(51, 51, 51, 1);
+					    border-radius: 2em;
+					    position: relative;
+					    text-decoration: none;
+					    padding: 0.5em 1em;
+	        		}
+	        	}
+
+	        };
+	        img.product-img{
+	        	width: 100%;
+	        };
+		}
+	}
+}
+
+@include footer;
+
+@media screen and (min-width: 48em) {
+     .product{
+     	ul{
+     		li{
+     			width: 25%;
+        		*width: 24.9690%;
+     		}
+     	}
+     }
+
+     @include respFooter;
+}

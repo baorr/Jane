@@ -1,0 +1,22 @@
+@import "input.scss";
+@import "button.scss";
+@import "layout.scss";
+
+@mixin search{
+	.search{
+		@include pure-g;
+		input{
+			@include pure-u;
+			@include __input;
+			width: 220px;
+		}
+
+		button{
+			@include pure-u;
+			@include primary-button;
+			border: none;
+			border-radius: 0;
+		}
+
+	}
+}

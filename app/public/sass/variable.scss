@@ -1,0 +1,64 @@
+//default font
+
+  transparent-color: rgba(0, 0, 0, 0);
+$light-black-color: rgba(0, 0, 0, 0.87);
+$lighter-black: rgba(0, 0, 0, 0.2);
+$white-color: rgba(255, 255, 255, 1);
+$white-color-half: rgba(255, 255, 255, 0.5);
+$flat-blue: rgba(61, 112, 178, 1);
+$flat-blue-half: rgba(61, 112, 178, 0.5);
+$light-blue: rgba(85, 150, 230, 1);
+$light-gray: rgba(245, 247, 250, 1);
+$lighter-blue: rgba(122, 199, 255, 1);
+$gray-blue: rgba(238, 246, 254, 1);
+$light-blue-darker: rgba(235, 240, 247, 1);
+$light-gray: rgba(245, 247, 250, 1);
+$light-gray-darker: rgba(245, 247, 250, 0.5);
+$cool-gray: rgba(223, 227, 230, 1);
+$outline-color: rgba(110, 148, 197, 1);
+$darker-gray: rgba(140, 155, 165, 1);
+$darker-gray-half: rgba(140, 155, 165, 1);
+
+$info-color: rgba(90, 170, 250, 1);
+$done-color: rgba(90, 167, 0, 1);
+$warn-color: rgba(239, 193, 0, 1);
+$error-color: rgba(228, 22, 42, 1);
+
+$close-color: $darker-gray;
+$title-color: rgba(21, 41, 53, 1);
+$content-color: rgba(90, 104, 114, 1);
+$content-color-darker: rgba(90, 104, 114, 0.5);
+
+
+$default-font-family: Arial, Helvetica, sans-serif;
+$defualt-border-width: 1px;
+$default-border-color: $transparent-color;
+$default-bacground-color: $light-blue-darker;
+
+
+//default size
+$twenty: 20px;
+$sixteen-em: 1.25em;
+
+$sixteen: 16px;
+$sixteen-em: 1em;
+
+$fourteen: 14px;
+$fourteen-em: 0.875em;
+
+$twelve: 12px;
+$twelve-em: 0.75em;
+
+
+//responsive
+$mobile-small: 240px;
+$mobile-large: 320px;
+
+$tablet-small: 480px;
+$tablet-large: 768px;
+
+$screen-small: 1024px;
+$screen-large: 1280px;
+
+
+

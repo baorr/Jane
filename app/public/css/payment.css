@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+.header {
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+.header img {
+    height: 70px;
+}
+
+.pay-container {
+    margin: 0 auto;
+    width: 800px;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.pay-container .top_text {
+    text-align: center;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.pay-container .amount_text {
+    text-align: center;
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: bold;
+}
+
+.pay-container .channels {
+    padding: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.pay-container .channel-box {
+    box-sizing: border-box;
+    width: 160px;
+    height: 60px;
+    background-color: #ffffff;
+    border: solid 3px #f5f7fa;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.pay-container .channel-box>img {
+    height: 26px;
+    margin-right: 5px;
+}
+
+.pay-container .channel-box:hover {
+    border: solid 3px rgba(85, 150, 230, 0.4);
+}
+
+.pay-container .channel-box.selected {
+    border: solid 3px #5596e6;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pay-container .channel-box.selected:after {
+    content: " ";
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../images/icon_pay_checked.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+}
+
+.pay-container .btns {
+    padding: 20px 0 50px 0;
+    text-align: center;
+}

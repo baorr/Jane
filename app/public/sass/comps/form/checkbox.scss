@@ -1,0 +1,70 @@
+@mixin form-checkbox{
+	input[type="checkbox"]{
+	  position: absolute; // take it out of document flow
+	  opacity: 0; // hide it
+	  &{
+	  	+ label {
+		    position: relative;
+		    cursor: pointer;
+		    padding: 0;
+		    color: $checkbox-font-color;
+		    &::before {
+			    content: '';
+			    margin-right: 10px;
+			    display: inline-block;
+			    vertical-align: text-top;
+			    width: 18px;
+			    height: 18px;
+			    border: 2px solid $checkbox-border-color;
+			}
+
+			&:hover{
+				&::before{
+					border: 2px solid $checkbox-border-hover-color;
+				}
+			}
+
+			&:focus{
+				&::before{
+					box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+				}
+			}
+		  };
+
+		 &:disabled{
+		 	+ label{
+		 		opacity: 0.5;
+		 		color: $checkbox-font-color;
+			    cursor: auto;
+			    &::before{
+			    	box-shadow: none;
+		    		background: $checkbox-disable-background-color;
+		    		border: 2px solid $checkbox-border-color;
+			    }
+		 	}
+		  };
+
+		  &:checked{
+		  	+ label{
+		  	 	&::after{
+				    content: '';
+				    position: absolute;
+				    left: 8px;
+    				top: 4px;
+				    width: 5px;
+    				height: 10px;
+    				border-right: 2px solid $checkbox-font-checked-color;
+    				border-bottom: 2px solid $checkbox-font-checked-color;
+				    transform: rotate(45deg);
+				};
+
+				&::before{
+				    background: $checkbox-background-checked-color;
+				    border: 2px solid $checkbox-border-checked-color;
+				};
+		  	}
+		  }
+
+	  }
+	}
+}

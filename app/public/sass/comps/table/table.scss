@@ -1,0 +1,51 @@
+@mixin table{
+	table{
+    	border-collapse: collapse;
+	    border-spacing: 0;
+	    empty-cells: show;
+	    width: 100%;
+	    border: 1px solid $table-border-color;
+
+	    caption{
+	    	color: $table-font-color;
+		    font: italic 85%/1 arial, sans-serif;
+		    padding: 1em 0;
+		    text-align: center;
+	    }
+
+	    td, th{
+	    	border-bottom: 1px solid $table-border-color;
+		    margin: 0;
+		    overflow: visible;
+		    padding: 8px 16px;
+		    font-size: 0.875em;
+		    text-align: left;
+		    color: $table-font-color;
+	    }
+
+	    th{
+	    	border-bottom: 1px solid $flat-blue;
+	    }
+
+	    tbody{
+	    	tr{
+		    	&:nth-child(2n+1){
+		    		td{
+			    		background-color: $table-odd-row-color;
+			    	}
+		    	}
+
+		    	&:hover{
+		    		outline: 1px solid $table-row-hover-border-color;
+		    	}
+		    }
+	    }
+
+	    thead {
+		    color: $table-header-font-color;
+		    text-align: left;
+		    vertical-align: bottom;
+		}
+
+    }
+}

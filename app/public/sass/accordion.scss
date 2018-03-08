@@ -1,0 +1,49 @@
+@mixin accordion{
+		.accordion{
+			.item{
+				> input[type='radio'], > input[type='checkbox']{
+				  display: none;
+				  &:checked{
+					~ .content{
+					  	max-height: 500px;
+					};
+				  };
+				}
+
+				> input[type='radio']{
+				  		&:checked{
+				  			 ~ content{
+								-webkit-transition-delay: 0ms;
+								-moz-transition-delay: 0ms;
+								-o-transition-delay: 0ms;
+								transition-delay: 0ms;
+				  			}
+				  		}
+				  }
+
+				& > .content{
+					-webkit-transition: max-height 0.1s linear;
+					-moz-transition: max-height 0.1s linear;
+					-o-transition: max-height 0.1s linear;
+					transition: max-height 0.1s linear;
+					max-height: 0;
+					overflow: auto;
+					padding: 0 10px;
+				}
+
+				& > label {
+				  cursor: pointer;
+				  padding: 10px 0;
+				  display: block;
+				  background-color: #e0e0e0;
+				  border: 1px solid #d0d0d0;
+				  -webkit-box-sizing: border-box;
+				  -moz-box-sizing: border-box;
+				  box-sizing: border-box;
+				  &:hover{
+					  background-color: #ffaaaa;
+				  };
+				}
+			}
+		}
+}

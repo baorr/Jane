@@ -1,0 +1,100 @@
+//buttons
+
+@mixin genBorder($bcolor){
+    border: 1px solid $bcolor;
+    border-left: 6px solid $bcolor;
+};
+
+@mixin notification{
+    .notification{
+       padding: 1.25em;
+       margin: 0 0 1em 0;
+       position: relative;
+       color: $content-color;
+       box-sizing: border-box;
+       &::before{
+          position: relative;
+          width: 16px;
+          height: 16px;
+          border-radius: 12px;
+          display: inline-block;
+          vertical-align: middle;
+          content: '';
+          margin: 0 10px 0 0;
+       };
+       &.info{
+            @include genBorder($tip-info-color);
+
+            &::before{
+              background-color: $tip-info-color;
+              content: '';
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                font-size: 12px;
+                text-align: center;
+                line-height: 16px;
+                border-top: 2px solid $white-color;
+                height: 1px;
+                border-bottom: 5px solid $white-color;
+                width: 2px;
+                left: 27px;
+                top: 29px;
+            }
+       };
+       &.error{
+            @include genBorder($tip-error-color);
+            &::before{
+              background-color: $tip-error-color;
+              content: 'I';
+              color: $white-color;
+              text-align: center;
+              line-height: 16px;
+              transform: rotate(40deg);
+              marign: 0 10px 0 0;
+            };
+       };
+       &.warn{
+            @include genBorder($tip-warn-color);
+            &::before{
+                border: 9px solid transparent;
+                width: 0;
+                height: 0;
+                border-radius: 0;
+                border-bottom: 16px solid $tip-warn-color;
+                border-top: 0;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                font-size: 12px;
+                text-align: center;
+                line-height: 16px;
+                border-top: 5px solid $white-color;
+                height: 1px;
+                border-bottom: 2px solid $white-color;
+                width: 2px;
+                left: 28px;
+                top: 31px;
+            }
+       };
+       &.done{
+            @include genBorder($tip-done-color);
+            &::before{
+              background-color: $tip-done-color;
+            }
+            &::after{
+              position: absolute;
+              width: 4px;
+              height: 7px;
+              content: '';
+              left: 25px;
+              top: 28px;
+              border-right: 2px solid $white-color;
+              border-bottom: 2px solid $white-color;
+              transform: rotate(40deg);
+            }
+       };
+    }
+}

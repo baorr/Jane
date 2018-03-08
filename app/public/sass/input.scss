@@ -1,0 +1,17 @@
+
+@mixin __same{
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@mixin __input{
+    @include __same;
+    vertical-align: middle;
+
+    &:not([type]){
+        @include __same;
+    }
+}

@@ -1,0 +1,45 @@
+@mixin device{
+	.iphone{
+	    position: relative;
+	    background-color: rgba(255, 255, 255, 1);
+	    border-radius: 40px;
+	    padding: 70px 11px 0 11px;
+	    width: 220px;
+	    height: 475px;
+	    box-shadow: 4px 6px 36px 14px rgba(235, 0, 70, 0.1);
+		&::before, &::after{
+			position: absolute;
+			background-color: rgba(222, 222, 222, 1);
+			content: "";
+		};
+		&::before{
+			width: 7px;
+		    height: 7px;
+		    border-radius: 50%;
+		    top: 37px;
+		    left: 90px;
+		};
+		&::after{
+			width: 50px;
+		    height: 3px;
+		    top: 39px;
+		    left: 110px;
+		};
+
+		.device-screen{
+			video{
+				width: 100%;
+				border-radius: 5px;
+			};
+		};
+
+		.device-bot{
+			margin: 0 auto;
+		    width: 40px;
+		    height: 40px;
+		    border: 4px solid rgba(222, 222, 222, 1);
+		    border-radius: 50%;
+		    transform: translateY(15px);
+		}
+	};
+};

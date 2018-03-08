@@ -1,0 +1,193 @@
+//reset
+$font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+
+//anchor
+$anchor-color: $flat-blue;
+$anchor-hover-color: $light-blue;
+$anchor-disbale-color: $flat-blue;
+
+//input
+$input-placeholder-color: $content-color;
+$input-font-color: $light-black-color;
+$input-border-color: $default-border-color;
+$input-border-change-color: $outline-color;
+$input-border-width: $defualt-border-width;
+$input-bacground-color: $default-bacground-color;
+
+//select
+$select-placeholder-color: $content-color;
+$select-font-color: $light-black-color;
+$select-border-color: $default-border-color;
+$select-border-change-color: $outline-color;
+$select-border-width: $defualt-border-width;
+$select-bacground-color: $default-bacground-color;
+
+//checkbox
+$checkbox-border-color: $darker-gray;
+$checkbox-font-color: $content-color;
+$checkbox-border-hover-color: $light-blue;
+$checkbox-font-hover-color: $lighter-blue;
+$checkbox-border-checked-color: $flat-blue;
+$checkbox-font-checked-color: $white-color;
+$checkbox-background-checked-color: $flat-blue;
+$checkbox-border-disable-color: $light-gray-darker;
+$checkbox-font-disable-color: $content-color-darker;
+$checkbox-disable-background-color: $white-color;
+
+//radio
+$radio-border-color: $darker-gray;
+$radio-font-color: $content-color;
+$radio-border-hover-color: $light-blue;
+$radio-font-hover-color: $lighter-blue;
+$radio-border-checked-color: $flat-blue;
+$radio-font-checked-color: $white-color;
+$radio-background-checked-color: $flat-blue;
+$radio-border-disable-color: $light-gray-darker;
+$radio-font-disable-color: $content-color-darker;
+$radio-disable-background-color: $white-color;
+
+//select
+$radio-font-color: $title-color;
+$radio-border-color: $flat-blue;
+
+//toggle
+$toggle-font-color: $white-color;
+$toggle-label-on-background-color: $flat-blue;
+$toggle-label-off-background-color: $darker-gray;
+$toggle-handle-on-background-color: $white-color;
+$toggle-handle-off-background-color: $white-color-half;
+
+//toggle-slide
+$toggle-slide-font-color: $white-color;
+$toggle-slide-background-color: $white-color;
+$toggle-slide-label-on-background-color: $flat-blue;
+$toggle-slide-label-off-background-color: $darker-gray;
+
+//toggle-rotate
+$toggle-rotate-font-color: $white-color;
+$toggle-rotate-background-color: $white-color;
+$toggle-rotate-label-on-background-color: $flat-blue;
+$toggle-rotate-label-off-background-color: $darker-gray;
+
+//toggle-light
+$toggle-light-background-color: $transparent-color;
+$toggle-light-on-font-color: $flat-blue;
+$toggle-light-on-border-color: $flat-blue;
+$toggle-light-off-font-color: $content-color;
+$toggle-light-off-border-color: $light-gray;
+$toggle-light-handle-on-background-color: $flat-blue;
+$toggle-light-handle-off-background-color: $darker-gray;
+
+//button
+$button-font-color: $white-color;
+$button-background-color: $flat-blue;
+$button-background-hover-color: $light-blue;
+$button-font-disable-color: $white-color;
+$button-background-disable-color: $flat-blue;
+$button-background-disable-hover-color: $flat-blue-half;
+
+//secondary button
+$secondary-button-font-color: $flat-blue;
+$secondary-button-background-color: $white-color;
+$secondary-button-border-color: $flat-blue;
+$secondary-button-font-hover-color: $white-color;
+$secondary-button-background-hover-color: $flat-blue;
+$secondary-button-font-disable-color: $flat-blue;
+$secondary-button-background-disable-color: $white-color;
+
+//select button
+$select-button-font-color: $content-color;
+$select-button-background-color: $white-color;
+$select-button-border-color: $light-gray;
+$select-button-font-hover-color: $info-color;
+$select-button-border-hover-color: $lighter-blue;
+$select-button-background-hover-color: $white-color;
+$select-button-font-selected-color: $info-color;
+$select-button-border-selected-color: $lighter-blue;
+$select-button-background-selected-color: $gray-blue;
+$select-button-font-disable-color: $content-color;
+$select-button-border-disable-color: $light-gray;
+$select-button-background-disable-color: $white-color;
+
+//tip
+$tip-font-color: $title-color;
+$tip-info-color: $info-color;
+$tip-done-color: $done-color;
+$tip-warn-color: $warn-color;
+$tip-error-color: $error-color;
+
+//box
+$box-title-color: $title-color;
+$box-close-color: $close-color;
+$box-content-color: $content-color;
+
+//progress bar
+$progress-bar-font-color: $close-color;
+$progress-bar-selected-color: $flat-blue;
+
+//progress
+$progress-font-color: $content-color;
+$progress-border-color: $content-color;
+$progress-background-color:$white-color;
+$progress-font-active-color: $flat-blue;
+$progress-border-active-color: $flat-blue;
+$progress-background-active-color:$flat-blue;
+$progress-font-compelete-color: $flat-blue;
+$progress-border-compelete-color: $flat-blue;
+$progress-background-compelete-color:$flat-blue;
+
+//progress-navi
+$progress-navi-font-color: $white-color;
+$progress-navi-border-color: $white-color;
+$progress-navi-background-color:$darker-gray;
+$progress-navi-font-hover-color: $white-color;
+$progress-navi-border-hover-color: $light-blue;
+$progress-navi-background-hover-color:$light-blue;
+$progress-navi-background-active-color:$light-blue;
+$progress-navi-background-compelete-color:$flat-blue;
+
+//table
+$table-font-color: $title-color;
+$table-border-color: $cool-gray;
+$table-caption-color: $title-color;
+$table-header-font-color: $title-color;
+$table-odd-row-color: rgba(240, 243, 246, 1);
+$table-row-hover-border-color: $light-blue;
+
+//tab
+$tab-navi-font-color: $content-color;
+$tab-navi-border-color: $transparent-color;
+$tab-navi-font-hover-color: $flat-blue;
+$tab-navi-border-hover-color: $flat-blue;
+$tab-panel-items-background-color: $white-color;
+
+//switcher
+$switcher-border-color: $flat-blue;
+$switcher-font-color: $flat-blue;
+$switcher-border-hover-color: $light-blue;
+$switcher-font-hover-color: $white-color;
+$switcher-background-hover-color: $light-blue;
+$switcher-border-selected-color: $flat-blue;
+$switcher-font-selected-color: $white-color;
+$switcher-background-selected-color: $flat-blue;
+$switcher-border-disable-color: $light-gray-darker;
+$switcher-font-disable-color: $content-color-darker;
+$switcher-disable-background-color: $white-color;
+
+//pagigation
+$pagigation-font-color: $cool-gray;
+
+//slider
+$slider-border-color: $white-color;
+$slider-shadow-color: $lighter-black;
+
+//accordion
+$accordion-border-color: $cool-gray;
+$accordion-background-color: $white-color;
+$accordion-label-font-color: $flat-blue;
+$accordion-label-background-color: $gray-blue;
+
+//popup
+$popup-title-color: $title-color;
+$popup-content-color: $content-color;
+$popup-close-color: $close-color;

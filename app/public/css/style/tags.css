@@ -1,0 +1,268 @@
+.bx--tag {
+    font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 .625rem;
+    height: 1.25rem;
+    margin: .1875rem;
+    border-radius: 0.9375rem;
+}
+
+.bx--tag:not(:first-child) {
+    margin-left: 0;
+}
+
+.bx--tag--ibm {
+    background-color: #c0e6ff;
+    color: #325c80;
+}
+
+.bx--tag--beta {
+    background-color: #dfe3e6;
+    color: #394b54;
+}
+
+.bx--tag--third-party {
+    background-color: #a7fae6;
+    color: #006d5d;
+}
+
+.bx--tag--local,
+.bx--tag--dedicated,
+.bx--tag--custom {
+    background-color: #eed2ff;
+    color: #734098;
+}
+
+.bx--tag--experimental {
+    background-color: #ffd4a0;
+    color: #a53725;
+}
+
+.bx--tag--community {
+    background-color: #c8f08f;
+    color: #2d660a;
+}
+
+.bx--tag--private {
+    background-color: #fde876;
+    color: #735f00;
+}
+
+.bx--left-nav__trigger {
+    width: 3.75rem;
+    height: 3.125rem;
+    position: relative;
+    transition: 250ms cubic-bezier(0.5, 0, 0.1, 1);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.bx--left-nav__trigger:focus {
+    outline: 0;
+}
+
+.bx--left-nav__trigger:hover,
+.bx--left-nav__trigger:focus {
+    background-color: #5aaafa;
+}
+
+.bx--left-nav__trigger:hover span,
+.bx--left-nav__trigger:hover span:before,
+.bx--left-nav__trigger:hover span:after,
+.bx--left-nav__trigger:focus span,
+.bx--left-nav__trigger:focus span:before,
+.bx--left-nav__trigger:focus span:after {
+    background: #fff;
+}
+
+.bx--left-nav__trigger--btn {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.25rem;
+    width: 100%;
+    transition: 250ms cubic-bezier(0.5, 0, 0.1, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.bx--left-nav__trigger--btn span,
+.bx--left-nav__trigger--btn span:before,
+.bx--left-nav__trigger--btn span:after {
+    height: 0.125rem;
+    width: 1.25rem;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 250ms ease;
+}
+
+.bx--left-nav__trigger--btn span:before {
+    top: -0.375rem;
+}
+
+.bx--left-nav__trigger--btn span:after {
+    bottom: -0.375rem;
+}
+
+.bx--left-nav__trigger--active .bx--left-nav__trigger--btn {
+    left: 1.125rem;
+}
+
+.bx--left-nav__trigger--active .bx--left-nav__trigger--btn span:before,
+.bx--left-nav__trigger--active .bx--left-nav__trigger--btn span:after {
+    top: 0;
+    width: 1.59125rem;
+}
+
+.bx--left-nav__trigger--active .bx--left-nav__trigger--btn span:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.bx--left-nav__trigger--active .bx--left-nav__trigger--btn span:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.bx--left-nav__trigger--apps span,
+.bx--left-nav__trigger--apps span:before,
+.bx--left-nav__trigger--apps span:after {
+    background: #00b4a0;
+}
+
+.bx--left-nav__trigger--apps:focus {
+    outline: 0;
+}
+
+.bx--left-nav__trigger--apps:hover,
+.bx--left-nav__trigger--apps:focus {
+    background-color: #008571;
+}
+
+.bx--left-nav__trigger--apps:hover span,
+.bx--left-nav__trigger--apps:hover span:before,
+.bx--left-nav__trigger--apps:hover span:after,
+.bx--left-nav__trigger--apps:focus span,
+.bx--left-nav__trigger--apps:focus span:before,
+.bx--left-nav__trigger--apps:focus span:after {
+    background: #fff;
+}
+
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active span {
+    background: transparent;
+}
+
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active span:before,
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active span:after {
+    background: #008571;
+}
+
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active:hover,
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active:focus {
+    background-color: #008571;
+}
+
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active:hover span:before,
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active:hover span:after,
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active:focus span:before,
+.bx--left-nav__trigger--apps.bx--left-nav__trigger--active:focus span:after {
+    background: #fff;
+}
+
+.bx--left-nav__trigger--services span,
+.bx--left-nav__trigger--services span:before,
+.bx--left-nav__trigger--services span:after {
+    background: #ba8ff7;
+}
+
+.bx--left-nav__trigger--services:focus {
+    outline: 0;
+}
+
+.bx--left-nav__trigger--services:hover,
+.bx--left-nav__trigger--services:focus {
+    background-color: #734098;
+}
+
+.bx--left-nav__trigger--services:hover span,
+.bx--left-nav__trigger--services:hover span:before,
+.bx--left-nav__trigger--services:hover span:after,
+.bx--left-nav__trigger--services:focus span,
+.bx--left-nav__trigger--services:focus span:before,
+.bx--left-nav__trigger--services:focus span:after {
+    background: #fff;
+}
+
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active span {
+    background: transparent;
+}
+
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active span:before,
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active span:after {
+    background: #734098;
+}
+
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active:hover,
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active:focus {
+    background-color: #734098;
+}
+
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active:hover span:before,
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active:hover span:after,
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active:focus span:before,
+.bx--left-nav__trigger--services.bx--left-nav__trigger--active:focus span:after {
+    background: #fff;
+}
+
+.bx--left-nav__trigger--infrastructure span,
+.bx--left-nav__trigger--infrastructure span:before,
+.bx--left-nav__trigger--infrastructure span:after {
+    background: #5aaafa;
+}
+
+.bx--left-nav__trigger--infrastructure:focus {
+    outline: 0;
+}
+
+.bx--left-nav__trigger--infrastructure:hover,
+.bx--left-nav__trigger--infrastructure:focus {
+    background-color: #3d70b2;
+}
+
+.bx--left-nav__trigger--infrastructure:hover span,
+.bx--left-nav__trigger--infrastructure:hover span:before,
+.bx--left-nav__trigger--infrastructure:hover span:after,
+.bx--left-nav__trigger--infrastructure:focus span,
+.bx--left-nav__trigger--infrastructure:focus span:before,
+.bx--left-nav__trigger--infrastructure:focus span:after {
+    background: #fff;
+}
+
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active span {
+    background: transparent;
+}
+
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active span:before,
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active span:after {
+    background: #3d70b2;
+}
+
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active:hover,
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active:focus {
+    background-color: #3d70b2;
+}
+
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active:hover span:before,
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active:hover span:after,
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active:focus span:before,
+.bx--left-nav__trigger--infrastructure.bx--left-nav__trigger--active:focus span:after {
+    background: #fff;
+}

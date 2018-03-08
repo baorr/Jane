@@ -1,0 +1,88 @@
+@import "layout.scss";
+@import "search.scss";
+@import "loading.scss";
+
+@mixin header{
+	.qucik{
+		@include pure-g;
+		section{
+			@include pure-u-1-2;
+			height: 3.125em;
+			&.logo{
+				a{
+					width: 100px;
+					display: block;
+					padding: 10px;
+					svg{
+					width: 100%;
+						fill: rgba(0, 0, 0, 1);
+					}
+				}
+			}
+		}
+	}
+
+	.shutcut{
+		text-align: right;
+		text-align: right;
+		padding: 0 2em 0 1em;
+		box-sizing: border-box;
+		position: relative;
+		.loading-ball{
+			@include loading-ball-css;
+			width: 20px;
+			height: 20px;
+			border-radius: 15px;
+		};
+		ul li{
+			display: inline-block;
+		};
+		ul li a{
+			text-decoration: none;
+			font-size: 0.875em;
+			padding: 16px;
+			display: block;
+			color: rgba(50, 50, 50, 1);
+		}
+	}
+
+	.navi{
+		@include navi;
+	}
+
+	.header-menu{
+		background-color: rgba(41, 41, 41, 1);
+		@include pure-g;
+		nav{
+			@include pure-u-1-2;
+			@include pure-u;
+		}
+		section{
+			@include pure-u-1-2;
+			@include pure-u;
+			padding: 20px 0 0 0;
+			.wrapper{
+				@include pure-g;
+				.search-wrapper{
+					text-align: right;
+					@include pure-u-1-2;
+					@include pure-u;
+				}
+				.roadmap{
+					@include pure-u-1-2;
+					@include pure-u;
+					padding: 5px 0 0 0;
+					a{
+					    text-decoration: none;
+					    padding: 10px 20px;
+					    border: 1px solid rgba(255, 255, 255, 1);
+					    font-size: 0.875em;
+					    color: rgba(255, 255, 255, 1);
+					    margin: 0 0 0 10px;
+					}
+				}
+			}
+		}
+		@include search;
+	}
+}

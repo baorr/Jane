@@ -1,0 +1,64 @@
+@import "variable.scss";
+
+
+//buttons
+@mixin primary-button {
+    outline: 0;
+  	color: $defualt-primary-button-font-color;
+  	background-color: $defualt-primary-button-background-color;
+  	text-decoration: none;
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+  	&:hover{
+  		background-color: $defualt-primary-button-hover-background-color;
+  	}
+  	&[disabled]{
+  		background-color: $defualt-primary-button-disable-background-color;
+  	}
+  	&[disabled]:hover{
+	  	background-color: $defualt-primary-button-disable-background-color;
+  	}
+}
+
+@mixin secondary-button {
+    outline: 0;
+  	color: $defualt-secondary-button-font-color;
+  	background-color: $defualt-secondary-button-background-color;
+  	display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    box-sizing: border-box;
+  	text-decoration: none;
+    padding: 0.5em 1em;
+  	&:hover{
+  		background-color: $defualt-secondary-button-hover-background-color;
+      color: $defualt-secondary-button-background-color;
+  	}
+  	&[disabled]{
+  		background-color: $defualt-secondary-button-disable-background-color;
+  	}
+  	&[disabled]:hover{
+	  	background-color: $defualt-secondary-button-disable-background-color;
+  	}
+}

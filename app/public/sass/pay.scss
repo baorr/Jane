@@ -1,0 +1,47 @@
+@import "layout.scss";
+@import "reset";
+@import "button.scss";
+@import "menu.scss";
+
+@import "header.scss";
+@import "footer.scss";
+
+@include reset
+@include header;
+
+.pay{
+	margin: 0 auto;
+	.wrapper {
+		max-width: 1296px;
+		margin: 0 auto;
+		text-align: center;
+		.title h1{
+			padding: 110px 0 30px;
+		}
+		.list{
+			svg{
+				vertical-align: middle;
+				fill: rgba(61, 112, 178, 1);
+			}
+			@include pure-u;
+		}
+		.buttons{
+			padding: 10px 0;
+			a{
+				@include secondary-button;
+				border:1px solid rgba(61, 112, 178, 1);
+				margin: 0 0 0 10px;
+				&:first-child{
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@include footer;
+
+@media screen and (min-width: 48em) {
+
+     @include respFooter;
+}

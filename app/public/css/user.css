@@ -1,0 +1,378 @@
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+  word-spacing: -0.43em; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+  background-color: whitesmoke; }
+
+a {
+  outline: 0; }
+
+em {
+  font-weight: 700;
+  font-style: normal; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+ul, ul li, p, h1, h2, h3, h4, h5 {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+img {
+  border: 0;
+  outline: 0; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9; }
+
+body {
+  background-color: #f5f7fa; }
+
+.qucik {
+  background-color: #182238;
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start; }
+  .qucik[class*="pure-u"] {
+    /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+    font-family: sans-serif; }
+  .qucik section {
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    width: 50%;
+    *width: 49.9690%;
+    height: 50px; }
+    .qucik section.logo a {
+      width: 100px;
+      display: block;
+      padding: 10px; }
+      .qucik section.logo a svg {
+        width: 100%;
+        fill: white; }
+
+.shutcut {
+  text-align: right;
+  text-align: right;
+  padding: 0 2em 0 1em;
+  box-sizing: border-box;
+  position: relative; }
+  .shutcut .loading-ball {
+    background-color: transparent;
+    border: 3px solid rgba(0, 183, 229, 0.9);
+    opacity: .9;
+    border-top: 3px solid transparent;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  .shutcut ul li {
+    display: inline-block; }
+  .shutcut ul li a {
+    text-decoration: none;
+    font-size: 0.875em;
+    padding: 16px;
+    display: block;
+    color: white; }
+
+.layout,
+.menu,
+.menu-link {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+.layout {
+  position: relative;
+  left: 0;
+  padding-left: 0;
+  padding-top: 50px; }
+
+.header {
+  margin: 0;
+  color: #5a6872;
+  padding: 0 10px;
+  padding: 20px 0; }
+  .header h1 {
+    padding: 0 20px;
+    font-size: 1.8125em;
+    color: #5a6872; }
+  .header h2 {
+    font-weight: 300;
+    color: #5a6872;
+    padding: 0;
+    margin-top: 0; }
+
+.content {
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.menu {
+  margin-left: -200px;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  /* so the menu or its navicon stays above all content */
+  background: #191818;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: white;
+  border-right: 1px solid #dfe3e6; }
+  .menu a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    text-align: left;
+    padding-left: 16px;
+    font-size: 0.875em;
+    border-left: 4px solid transparent; }
+  .menu > div > a {
+    padding: 20px 0 20px 16px;
+    font-size: 1.8125em;
+    color: #152935; }
+  .menu ul, .menu ul li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0; }
+  .menu ul li a {
+    padding: 5px 0 5px 16px;
+    text-align: left; }
+    .menu ul li a:hover {
+      background-color: rgba(61, 112, 178, 0.1);
+      color: #0869ff; }
+    .menu ul li a.selected {
+      color: #3d70b2;
+      border-left: 4px solid #3d70b2; }
+  .menu ul {
+    padding: 0; }
+
+.order-list {
+  position: relative;
+  min-height: 300px; }
+  .order-list .loading-ball {
+    background-color: transparent;
+    border: 3px solid rgba(0, 183, 229, 0.9);
+    opacity: .9;
+    border-top: 3px solid transparent;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  .order-list table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    width: 100%;
+    border: 1px solid #e7e7e7; }
+    .order-list table caption {
+      color: #000;
+      font: italic 85%/1 arial, sans-serif;
+      padding: 1em 0;
+      text-align: center; }
+    .order-list table td, .order-list table th {
+      border-left: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+      font-size: inherit;
+      margin: 0;
+      overflow: visible;
+      padding: 8px 16px;
+      font-size: 0.875em;
+      text-align: left; }
+    .order-list table thead {
+      background-color: #f5f7fa;
+      color: #4a4a4a;
+      text-align: left;
+      vertical-align: bottom; }
+  .order-list table {
+    border: solid 1px #dfe3e6; }
+    .order-list table td, .order-list table th {
+      padding: 14px 0 14px 42px;
+      text-align: left;
+      color: #152935;
+      border-left: 0;
+      border-bottom: 0; }
+      .order-list table td a, .order-list table th a {
+        color: #3d70b2; }
+    .order-list table th {
+      border-bottom: 1px solid rgba(61, 112, 178, 0.7);
+      background-color: white; }
+    .order-list table td {
+      background-color: white; }
+    .order-list table tr:nth-child(even) td {
+      background-color: #f0f3f6; }
+  .order-list > .wrapper.nopadding {
+    padding: 0; }
+  .order-list .product-info .product-info-item {
+    margin-top: 1.25em;
+    padding: 0 20px; }
+    .order-list .product-info .product-info-item h3 {
+      font-size: 1.4375em;
+      text-align: left;
+      font-weight: normal;
+      color: #152935;
+      border-bottom: solid 2px #3d70b2;
+      padding-bottom: 16px; }
+    .order-list .product-info .product-info-item ul li {
+      padding: 0.25em 0 0.5em;
+      border-bottom: 1px solid #dfe3e6; }
+      .order-list .product-info .product-info-item ul li label, .order-list .product-info .product-info-item ul li span {
+        font-size: 0.875em;
+        text-algin: left;
+        color: #152935; }
+      .order-list .product-info .product-info-item ul li label {
+        width: 260px;
+        display: inline-block; }
+  .order-list .product-info .product-info-item:first-child {
+    margin-top: 0; }
+
+.menu-link {
+  position: fixed;
+  display: block;
+  /* show this only on small screens */
+  top: 0;
+  left: 0;
+  /* "#menu width" */
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 10px;
+  /* change this value to increase/decrease button size */
+  z-index: 10;
+  width: 2em;
+  height: auto;
+  padding: 2.1em 1.6em; }
+  .menu-link:hover, .menu-link:focus {
+    background: #000; }
+  .menu-link span {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 0.2em; }
+    .menu-link span:before, .menu-link span:after {
+      background-color: #fff;
+      width: 100%;
+      height: 0.2em;
+      position: absolute;
+      margin-top: -0.6em;
+      content: " "; }
+    .menu-link span:after {
+      margin-top: 0.6em; }
+
+@media screen and (min-width: 48em) {
+  .header {
+    padding: 20px 30px 20px 60px; }
+  .content {
+    padding: 0 30px 20px 60px; }
+  .layout {
+    padding-left: 200px;
+    /* left col width "#menu" */
+    left: 0; }
+  .menu {
+    left: 200px;
+    top: 50px; }
+  .menu-link {
+    position: fixed;
+    left: 200px;
+    display: none; }
+  .layout.active .menu-link {
+    left: 200px; }
+  .layout.active {
+    position: relative;
+    left: 200px; } }

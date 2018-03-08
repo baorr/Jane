@@ -1,0 +1,116 @@
+.bx--pagination {
+    font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+    width: 100%;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #dfe3e6;
+}
+
+.bx--pagination .bx--form-item {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.bx--pagination__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bx--pagination__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.bx--pagination__text {
+    font-size: 0.75rem;
+    color: #5a6872;
+    display: none;
+}
+
+@media (min-width: 530px) {
+    .bx--pagination__text {
+        display: block;
+    }
+}
+
+.bx--pagination__button-icon {
+    height: 0.75rem;
+    width: 0.75rem;
+    fill: #5a6872;
+    pointer-events: none;
+    transition: 250ms;
+}
+
+.bx--pagination__button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.bx--pagination__button:hover .bx--pagination__button-icon {
+    fill: #3d70b2;
+}
+
+.bx--pagination__button:focus {
+    outline: 1px solid #3d70b2;
+}
+
+.bx--pagination__button--backward {
+    margin-left: 1.25rem;
+    margin-right: 1.75rem;
+}
+
+.bx--pagination__button--forward {
+    margin-left: 1.75rem;
+}
+
+.bx--pagination .bx--select {
+    margin-right: 0.625rem;
+}
+
+.bx--pagination .bx--select-input {
+    height: 1.5rem;
+    width: 3.375rem;
+    padding: 0 0.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.bx--pagination .bx--select-input:focus {
+    outline: 1px solid #3d70b2;
+}
+
+.bx--pagination .bx--select__arrow {
+    right: .5rem;
+    top: .625rem;
+}
+
+.bx--pagination .bx--text-input {
+    height: 1.5rem;
+    min-width: 1.5rem;
+    width: 1.5rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bx--pagination .bx--text-input:focus {
+    outline: 1px solid #3d70b2;
+}

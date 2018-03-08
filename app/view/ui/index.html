@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>Janell UI Example</title>
+    <link rel="stylesheet" href="{{ctx.app.config.pathFix}}/public/css/output/ui/ui.css">
+</head>
+<body>
+
+    <div class="inputs-wrapper placer">
+        <div class="input-box">
+            <label>默认</label>
+            <input type="text" />
+        </div>
+
+        <div class="check-box">
+            <input type="checkbox" id="t1" />
+            <label for="t1">
+                OK
+            </label>
+        </div>
+  
+        <div class="check-box">
+            <input type="checkbox" id="t2" disabled checked />
+            <label for="t2">
+                Disabled
+            </label>
+        </div>
+
+        <div class="radio-box">
+            <input type="radio" id="t3" />
+            <label for="t3">
+                OK
+            </label>
+        </div>
+
+        <div class="radio-box">
+            <input type="radio" id="t4" disabled checked />
+            <label for="t4">
+                Disabled
+            </label>
+        </div>
+
+        <div class="select-box">
+            <div class="select-wrapper">
+              <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttons-wrapper placer">
+        <button class="primary">Primary</button>
+        <button class="primary" disabled>Primary Disabled</button>
+        <button class="secondary">Secondary</button>
+        <button class="secondary" disabled>Secondary Disabled</button>
+    </div>
+
+    <div class="select-buttons-wrapper placer">
+        <div class="select-list">
+            <button class="item">Choose 1</button>
+            <button class="item selected">Choose 2</button>
+            <button class="item">Choose 3</button>
+            <button class="item" disabled>Choose 4</button>
+        </div>
+    </div>
+
+    <div class="anchors-wrapper placer">
+        <a href="#">Anchor</a>
+        <a href="#" class="disabled">Anchor Disabled</a>
+    </div>
+
+
+    <div class="tips-wrapper placer">
+        <div class="notification info">信息</div>
+        <div class="notification done">完成</div>
+        <div class="notification warn">警告</div>
+        <div class="notification error">错误</div>
+    </div>
+
+    <div class="table-wrapper placer">
+        <table>
+            <thead>
+                <tr>
+                    <th>单位1</th>
+                    <th>单位2</th>
+                    <th>单位3</th>
+                    <th>单位4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                    <td>Data4</td>
+                </tr>
+                <tr>
+                    <td>Data5</td>
+                    <td>Data6</td>
+                    <td>Data7</td>
+                    <td>Data8</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tab-wrapper placer">
+        <div class="tab">
+            <div class="tab-list">
+                <ul>
+                    <li><a href="#" class="selected">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                </ul>
+            </div>
+            <div class="panel-items">
+                <div class="item">Content 1</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="switcher-wrapper placer">
+        <div class="switcher">
+            <ul>
+                <li class="selected"><a href="#">Switcher 1</a></li>
+                <li><a href="#">Switcher 2</a></li>
+                <li><a href="#">Switcher 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="progress-wrapper placer">
+        <div class="progress">
+            <ul>
+                <li class="compelete">Compelete</li>
+                <li class="active">Active</li>
+                <li>Third Step</li>
+                <li>Forth Step</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="progress-flag-wrapper placer">
+        <div class="progress">
+            <ul>
+                <li class="compelete">Compelete</li>
+                <li class="active">Active</li>
+                <li>Third Step</li>
+                <li>Forth Step</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="progress-navi-wrapper placer">
+        <div class="progress-navi">
+            <ul>
+                <li class="compelete"><a href="#">Compelete</a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li><a href="#">Third Step</a></li>
+                <li><a href="#">Forth Step</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="toggle-wrapper placer">
+        
+        <label class="toggle">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+        <label class="toggle" data-role="disabled">
+            <input class="toggle-input" type="checkbox" disabled />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+        <label class="toggle toggle-slide">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+        <label class="toggle toggle-slide" data-role="disabled">
+            <input class="toggle-input" type="checkbox" disabled />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+        <label class="toggle toggle-rotate">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+        <label class="toggle toggle-rotate" data-role="disabled">
+            <input class="toggle-input" type="checkbox" disabled />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+        <label class="toggle toggle-light">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+        <label class="toggle toggle-light" data-role="disabled">
+            <input class="toggle-input" type="checkbox" disabled />
+            <span class="toggle-label" data-on="On" data-off="Off"></span> 
+            <span class="toggle-handle"></span> 
+        </label>
+
+    </div>
+
+    <div class="slide-wrapper placer">
+        <div class="slides">
+            <input type="radio" id="button-1" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input type="radio" id="button-2" name="controls"/>
+            <label for="button-2"></label>
+            <input type="radio" id="button-3" name="controls"/>
+            <label for="button-3"></label>
+            <input type="radio" id="button-4" name="controls"/>
+            <label for="button-4"></label>
+            <input type="radio" id="button-5" name="controls"/>
+            <label for="button-5"></label>
+            <label for="button-1" class="arrows" id="arrow-1">></label>
+            <label for="button-2" class="arrows" id="arrow-2">></label>
+            <label for="button-3" class="arrows" id="arrow-3">></label>
+            <label for="button-4" class="arrows" id="arrow-4">></label>
+            <label for="button-5" class="arrows" id="arrow-5">></label>
+            <div class="slides-inner">
+                <ul>
+                    <li id="slide1">
+                        <img src="/public/images/1.jpg" />
+                        <div class="description">
+                            <input type="checkbox" id="show-description-1"/>
+                            <label for="show-description-1" class="show-description-label">I</label>
+                            <div class="description-text">
+                                <h2>Flower power</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="slide2">
+                        <img src="/public/images/2.jpg" />
+                        <div class="description">
+                            <input type="checkbox" id="show-description-2"/>
+                            <label for="show-description-2" class="show-description-label">I</label>
+                            <div class="description-text">
+                                <h2>Golden sunset</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="slide3">
+                        <img src="/public/images/3.jpg" />
+                        <div class="description">
+                            <input type="checkbox" id="show-description-3"/>
+                            <label for="show-description-3" class="show-description-label">I</label>
+                            <div class="description-text">
+                                <h2>Flower power again</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="slide4">
+                        <img src="/public/images/4.jpg" />
+                        <div class="description">
+                            <input type="checkbox" id="show-description-4"/>
+                            <label for="show-description-4" class="show-description-label">I</label>
+                            <div class="description-text">
+                                <h2>Stormy coast</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="slide5">
+                        <img src="/public/images/5.jpg" />
+                        <div class="description">
+                            <input type="checkbox" id="show-description-5"/>
+                            <label for="show-description-5" class="show-description-label">I</label>
+                            <div class="description-text">
+                                <h2>Splash!</h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-wrapper placer" style="margin: 60px 0 20px 0;">
+        <div class="accordion  placer">
+            <ul>
+                <li>
+                    <label for='cp-1'>Single open 1</label>
+                    <input type='radio' name='a' id='cp-1'/>
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+            
+                <li>
+                    <label for='cp-2'>Single open 2</label>
+                    <input type='radio' name='a' id='cp-2' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <label for='cp-3'>Single open 3</label>
+                    <input type='radio' name='a' id='cp-3' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <label for='cp-4'>Single open 4</label>
+                    <input type='radio' name='a' id='cp-4' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <label for='cp-5'>Single open 5</label>
+                    <input type='radio' name='a' id='cp-5' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="accordion">
+            <ul>
+                <li>
+                    <label for='ch-1'>Multiple pane 1</label>
+                    <input type='checkbox' name='ch-1' id='ch-1' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+            
+                <li>
+                    <label for='ch-2'>Multiple pane 2</label>
+                    <input type='checkbox' name='ch-2' id='ch-2' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <label for='ch-3'>Multiple pane 3</label>
+                    <input type='checkbox' name='ch-3' id='ch-3' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <label for='ch-4'>Multiple pane 4</label>
+                    <input type='checkbox' name='ch-4' id='ch-4' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <label for='ch-5'>Multiple pane 5</label>
+                    <input type='checkbox' name='ch-5' id='ch-5' />
+                    <div class='content'>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="calendar-wrapper">
+
+    </div>
+
+    <div class="pop-up-wrapper buttons-wrapper placer">
+        <a id="close" class="secondary" href="#popup1">Open Window</a>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#close">&times;</a>
+                <div class="content">
+                    Thank to pop me out of that button, but now i'm done so you can close this window.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="switcher-wrapper placer">
+        <div class="switcher">
+            <ul>
+                <li>
+                    <input type="radio" name="test" id="test-1" />
+                    <label for="test-1">Switcher 1</label>
+                </li>
+                <li>
+                    <input type="radio" name="test" id="test-2" />
+                    <label for="test-2">Switcher 2</label>
+                </li>
+                <li>
+                    <input type="radio" name="test" id="test-3" />
+                    <label for="test-3">Switcher 3</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pure-css-tab-wrapper placer">
+        <div class="tab">
+            <input type="radio" id="test1" name="tab">
+            <input type="radio" id="test2" name="tab">
+            <input type="radio" id="test3" name="tab">
+            <input type="radio" id="test4" name="tab">
+            <div class="tab-list">
+                <ul>
+                    <li><label for="test1">Menu 1</label></li>
+                    <li><label for="test2">Menu 2</label></li>
+                    <li><label for="test3">Menu 3</label></li>
+                    <li><label for="test4">Menu 4</label></li>
+                </ul>
+            </div>
+            <div class="panel-items">
+                <div class="item">Content 1</div>
+                <div class="item">Content 2</div>
+                <div class="item">Content 3</div>
+                <div class="item">Content 4</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    </div>
+    <script src="/public/js/fastclick.js"></script>
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
+
+        document.getElementById('test1').addEventListener('change',function() {
+            console.log('Changed!');
+        });
+    </script>
+</body>
+</html>

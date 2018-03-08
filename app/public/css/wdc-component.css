@@ -1,0 +1,188 @@
+/**
+ * 全局提示组件
+ */
+
+.wdc-message {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.wdc-message-layer {
+    padding: 8px;
+    text-align: center
+}
+
+.wdc-message-content {
+    display: inline-block;
+    min-width: 380px;
+    text-align: left;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 10px 4px rgba(44, 61, 71, 0.3);
+}
+
+.wdc-message-content>i {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    margin-top: 2px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.wdc-message-content>span {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+    display: inline-block;
+    line-height: 20px;
+}
+
+.wdc-message-success {
+    border-left: solid 5px #5aa700;
+}
+
+.wdc-message-success>i {
+    background-image: url(../images/wdccom/wdc_message_success.png);
+}
+
+.wdc-message-error {
+    border-left: solid 5px #e71d32;
+}
+
+.wdc-message-error>i {
+    background-image: url(../images/wdccom/wdc_message_error.png);
+}
+
+.wdc-message-notice {
+    border-left: solid 5px #5596e6;
+}
+
+.wdc-message-notice>i {
+    background-image: url(../images/wdccom/wdc_message_notice.png);
+}
+
+.wdc-button {
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wdc-button-default {
+    color: #24c89a;
+    background-color: #ffffff;
+    border: solid 2px #24c89a;
+}
+
+.wdc-button-default:hover {
+    color: #29e0ad;
+    border: solid 2px #29e0ad;
+}
+
+.wdc-button-primary {
+    color: #fff;
+    background-color: #24c89a;
+}
+
+.wdc-button-primary:hover {
+    background-color: #29e0ad;
+}
+
+.wdc-button-large {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wdc-button-small {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+}
+
+
+/**
+ * 对话框
+ */
+
+.wdc-modal {
+    position: absolute;
+    z-index: 99999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.wdc-modal-shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wdc-modal-content {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 20%;
+    margin-left: -250px;
+    background-color: #ffffff;
+}
+
+.wdc-modal-header {
+    height: 50px;
+}
+
+.wdc-modal-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url(../images/icon_close.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center;
+}
+
+.wdc-modal-close:hover {
+    background-image: url(../images/icon_close_hover.png);
+}
+
+.wdc-modal-title {
+    font-size: 26px;
+    color: #5a6872;
+    padding-left: 50px;
+    line-height: 1;
+}
+
+.wdc-modal-text {
+    font-size: 16px;
+    color: #152935;
+    padding-left: 50px;
+    padding-top: 30px;
+    line-height: 24px;
+}
+
+.wdc-modal-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    background-color: #f9f9f9;
+}

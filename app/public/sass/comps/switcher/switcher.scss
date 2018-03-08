@@ -1,0 +1,55 @@
+@mixin switcher{
+	.switcher{
+		ul{
+			@include grid;
+			li{
+				@include grid-unit;
+				a,label{
+					color: $switcher-font-color;
+					font-size: 0.875em;
+					border-top: 1px solid $switcher-border-color;
+					border-bottom: 1px solid $switcher-border-color;
+					border-left: 1px solid $switcher-border-color;
+					padding: 10px 32px;
+					text-decoration: none;
+					cursor: pointer;
+				};
+
+				input{
+					display: none;
+					&:checked{
+						~ label{
+							color: $switcher-font-selected-color;
+							border-color: $switcher-border-selected-color;
+							background-color: $switcher-background-selected-color;
+						};
+					};
+				};
+
+				&.selected a, &.selected:hover a{
+					color: $switcher-font-selected-color;
+					border-color: $switcher-border-selected-color;
+					background-color: $switcher-background-selected-color;
+				}
+
+				&:hover a, &:hover label{
+					color: $switcher-font-hover-color;
+					border-color: $switcher-border-hover-color;
+					background-color: $switcher-background-hover-color;
+				}
+
+				&:first-child a, &:first-child label{
+					border-radius: 8px 0 0 8px;
+				}
+				&:last-child a, &:last-child label{
+					border-left: 1px solid $switcher-border-color;
+					border-right: 1px solid $switcher-border-color;
+					border-radius: 0 8px 8px 0;
+					&:hover{
+						border-color: $switcher-border-hover-color;
+					}
+				}
+			}
+		}
+	}
+}

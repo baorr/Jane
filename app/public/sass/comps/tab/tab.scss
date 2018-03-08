@@ -1,0 +1,91 @@
+@mixin tab{
+	.tab{
+		.tab-list{
+			ul{
+				@include grid;
+				li{
+					@include grid-unit;
+					padding: 0 2.25em 0 0;
+					a{
+						display: block;
+						text-align: center;
+						padding: 12px 0;
+						color: $tab-navi-font-color;
+						text-decoration: none;
+						border-bottom: 2px solid $tab-navi-border-color;
+						font-size: 0.875em;
+					}
+
+					&:hover a, a.selected{
+						color: $tab-navi-font-hover-color;
+						border-bottom: 2px solid $tab-navi-border-hover-color;
+					}
+				}
+			}
+		}
+
+		.panel-items{
+			background-color: $tab-panel-items-background-color;
+			.item{
+				padding: 32px 0;
+				font-size: 0.875em;
+			}
+		}
+	}
+};
+
+@mixin pure-css-tab{
+	.tab{
+		> input{
+			display: none;
+			@for $i from 1 through 4 {
+			  	&:nth-child(#{$i}):checked{
+					~ .tab-list{
+						ul li:nth-child(#{$i}) label{
+							color: $tab-navi-font-hover-color;
+							border-bottom: 2px solid $tab-navi-border-hover-color;
+						};
+					};
+					~ .panel-items{
+						.item:nth-child(#{$i}){
+							display: block;
+						};
+					};
+				};
+			};
+		};
+		.tab-list{
+			ul{
+				@include grid;
+				li{
+					@include grid-unit;
+					padding: 0 2.25em 0 0;
+					a, label{
+						display: block;
+						text-align: center;
+						padding: 12px 0;
+						color: $tab-navi-font-color;
+						text-decoration: none;
+						border-bottom: 2px solid $tab-navi-border-color;
+						font-size: 0.875em;
+						cursor: pointer;
+					};
+
+					&:hover a, a.selected, &:hover label{
+						color: $tab-navi-font-hover-color;
+						border-bottom: 2px solid $tab-navi-border-hover-color;
+					};
+				}
+			}
+		}
+
+		.panel-items{
+			background-color: $tab-panel-items-background-color;
+			.item{
+				padding: 32px 0;
+				font-size: 0.875em;
+				display: none;
+			}
+		}
+	}
+};

@@ -1,0 +1,8 @@
+@mixin form-input(){
+	label{
+		display: inline-block;
+		font-size: $fourteen-em;
+		color: $content-color;
+		width: 140px;
+	}
+}

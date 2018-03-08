@@ -1,0 +1,92 @@
+.bx--snippet--code {
+    font-family: monospace;
+    position: relative;
+    max-width: 40rem;
+    width: 100%;
+    background-color: rgba(61, 112, 178, 0.1);
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+
+.bx--snippet code {
+    font-size: 1rem;
+}
+
+.bx--snippet--code .bx--snippet-container {
+    max-height: 12rem;
+    overflow-y: scroll;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.bx--snippet--code .bx--snippet-container pre {
+    white-space: pre-wrap;
+}
+
+.bx--snippet--terminal {
+    font-family: monospace;
+    position: relative;
+    max-width: 40rem;
+    width: 100%;
+    background-color: #152935;
+    color: #fff;
+    height: 3.5rem;
+    padding: 0 2.5rem 0 1rem;
+}
+
+.bx--snippet--terminal .bx--snippet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 130%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    position: relative;
+}
+
+.bx--snippet__icon {
+    cursor: pointer;
+    fill: #3d70b2;
+    height: 1.5rem;
+    width: 1.125rem;
+    transition: 250ms;
+}
+
+.bx--snippet__icon:hover {
+    fill: #5596e6;
+}
+
+.bx--snippet--terminal .bx--snippet__icon {
+    fill: #fff;
+}
+
+.bx--snippet--terminal .bx--snippet__icon:hover {
+    fill: #5596e6;
+}
+
+.bx--snippet-button {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    height: 2rem;
+    width: 2rem;
+}
+
+.bx--snippet-button:focus {
+    outline: 1px solid #3d70b2;
+}
+
+.bx--snippet .bx--btn--copy__feedback {
+    font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+    z-index: 8000;
+    font-weight: 700;
+    left: inherit;
+    top: 1rem;
+    right: 1.25rem;
+}

@@ -1,0 +1,594 @@
+@charset "UTF-8";
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+  word-spacing: -0.43em; }
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+  word-spacing: -0.43em; }
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+  word-spacing: -0.43em; }
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+  word-spacing: -0.43em; }
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+  word-spacing: -0.43em; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+  background-color: whitesmoke; }
+
+a {
+  outline: 0; }
+
+em {
+  font-weight: 700;
+  font-style: normal; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+ul, ul li, p, h1, h2, h3, h4, h5 {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+img {
+  border: 0;
+  outline: 0; }
+
+.qucik {
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start; }
+  .qucik[class*="pure-u"] {
+    /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+    font-family: sans-serif; }
+  .qucik section {
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    width: 50%;
+    *width: 49.9690%;
+    height: 3.125em; }
+    .qucik section.logo a {
+      width: 100px;
+      display: block;
+      padding: 10px; }
+      .qucik section.logo a svg {
+        width: 100%;
+        fill: black; }
+
+.shutcut {
+  text-align: right;
+  text-align: right;
+  padding: 0 2em 0 1em;
+  box-sizing: border-box;
+  position: relative; }
+  .shutcut .loading-ball {
+    background-color: transparent;
+    border: 3px solid rgba(0, 183, 229, 0.9);
+    opacity: .9;
+    border-top: 3px solid transparent;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  .shutcut ul li {
+    display: inline-block; }
+  .shutcut ul li a {
+    text-decoration: none;
+    font-size: 0.875em;
+    padding: 16px;
+    display: block;
+    color: #323232; }
+
+.navi ul {
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start; }
+  .navi ul[class*="pure-u"] {
+    /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+    font-family: sans-serif; }
+
+.navi ul li {
+  display: inline-block;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+.navi ul li a {
+  display: block;
+  padding: 24px;
+  font-size: 0.875em;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent; }
+
+.navi ul li.market {
+  text-align: center;
+  padding: 0 0 0 16px;
+  color: white; }
+  .navi ul li.market h3 {
+    letter-spacing: 6px;
+    padding: 12px 0 0;
+    font-size: 150%;
+    font-weight: 600; }
+  .navi ul li.market p {
+    transform: scale(0.625) translateX(-5px) translateY(-8px);
+    -webkit-transform: scale(0.625) translateX(-5px) translateY(-8px);
+    -ms-transform: scale(0.625) translateX(-5px) translateY(-8px); }
+
+.navi ul li.search {
+  text-align: right; }
+
+.navi ul li a:hover {
+  border-bottom: 2px solid #0869ff; }
+
+.header-menu {
+  background-color: #292929;
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start; }
+  .header-menu[class*="pure-u"] {
+    /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+    font-family: sans-serif; }
+  .header-menu nav {
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    width: 50%;
+    *width: 49.9690%;
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto; }
+  .header-menu section {
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    width: 50%;
+    *width: 49.9690%;
+    display: inline-block;
+    *display: inline;
+    /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    padding: 20px 0 0 0; }
+    .header-menu section .wrapper {
+      letter-spacing: -0.31em;
+      /* Webkit: collapse white-space between units */
+      *letter-spacing: normal;
+      /* reset IE < 8 */
+      *word-spacing: -0.43em;
+      /* IE < 8: collapse white-space between units */
+      text-rendering: optimizespeed;
+      /* Webkit: fixes text-rendering: optimizeLegibility */
+      display: flex;
+      flex-flow: row wrap;
+      align-content: flex-start; }
+      .header-menu section .wrapper[class*="pure-u"] {
+        /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+        font-family: sans-serif; }
+      .header-menu section .wrapper .search-wrapper {
+        text-align: right;
+        display: inline-block;
+        *display: inline;
+        /* IE < 8: fake inline-block */
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+        width: 50%;
+        *width: 49.9690%;
+        display: inline-block;
+        *display: inline;
+        /* IE < 8: fake inline-block */
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto; }
+      .header-menu section .wrapper .roadmap {
+        display: inline-block;
+        *display: inline;
+        /* IE < 8: fake inline-block */
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+        width: 50%;
+        *width: 49.9690%;
+        display: inline-block;
+        *display: inline;
+        /* IE < 8: fake inline-block */
+        zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+        padding: 5px 0 0 0; }
+        .header-menu section .wrapper .roadmap a {
+          text-decoration: none;
+          padding: 10px 20px;
+          border: 1px solid white;
+          font-size: 0.875em;
+          color: white;
+          margin: 0 0 0 10px; }
+  .header-menu .search {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start; }
+    .header-menu .search[class*="pure-u"] {
+      /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+      font-family: sans-serif; }
+    .header-menu .search input {
+      display: inline-block;
+      *display: inline;
+      /* IE < 8: fake inline-block */
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: top;
+      text-rendering: auto;
+      padding: 0.5em 0.6em;
+      display: inline-block;
+      border: none;
+      box-sizing: border-box;
+      outline: 0;
+      vertical-align: middle;
+      width: 220px; }
+      .header-menu .search input:not([type]) {
+        padding: 0.5em 0.6em;
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+        outline: 0; }
+    .header-menu .search button {
+      display: inline-block;
+      *display: inline;
+      /* IE < 8: fake inline-block */
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: top;
+      text-rendering: auto;
+      outline: 0;
+      color: white;
+      background-color: #3d70b2;
+      text-decoration: none;
+      display: inline-block;
+      zoom: 1;
+      line-height: normal;
+      white-space: nowrap;
+      vertical-align: middle;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      box-sizing: border-box;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 0; }
+      .header-menu .search button:hover {
+        background-color: #5596e6; }
+      .header-menu .search button[disabled] {
+        background-color: rgba(61, 112, 178, 0.5); }
+      .header-menu .search button[disabled]:hover {
+        background-color: rgba(61, 112, 178, 0.5); }
+
+.product {
+  margin: 0 auto; }
+  .product ul {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    max-width: 1296px;
+    margin: 0 auto; }
+    .product ul[class*="pure-u"] {
+      /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+      font-family: sans-serif; }
+    .product ul li {
+      width: 100%;
+      display: inline-block;
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: top;
+      text-rendering: auto; }
+      .product ul li section {
+        margin: 0.5em;
+        border: 1px solid #e7e7e7; }
+        .product ul li section .product-description {
+          text-align: center; }
+        .product ul li section h4, .product ul li section p {
+          margin: 0;
+          padding: 0.8em 0;
+          background: #f7f7f7;
+          border-bottom: 1px solid #e7e7e7;
+          color: #526066; }
+        .product ul li section p:last-child {
+          margin: 0;
+          padding: 0.8em 0;
+          background: white;
+          border-bottom: none;
+          color: #526066; }
+        .product ul li section p a {
+          border: 1px solid #cccccc;
+          background: #fff;
+          color: #333333;
+          border-radius: 2em;
+          position: relative;
+          text-decoration: none;
+          padding: 0.5em 1em; }
+      .product ul li img.product-img {
+        width: 100%; }
+
+.contact {
+  margin: 0 auto;
+  padding: 1em 0;
+  text-align: center;
+  background-color: #323232; }
+  .contact .wrapper {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    max-width: 1296px;
+    margin: 0 auto; }
+    .contact .wrapper[class*="pure-u"] {
+      /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+      font-family: sans-serif; }
+    .contact .wrapper ul {
+      width: 100%;
+      display: inline-block;
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: top;
+      text-rendering: auto; }
+      .contact .wrapper ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 4px 0 0 0;
+        display: block;
+        font-size: 0.875em; }
+      .contact .wrapper ul li:first-child a {
+        font-weight: bolder;
+        padding: 0 0 20px 0;
+        font-size: 1em; }
+
+.delaration {
+  margin: 4em auto 0;
+  padding: 1em 0;
+  text-align: center;
+  background-color: black; }
+  .delaration .wrapper {
+    letter-spacing: -0.31em;
+    /* Webkit: collapse white-space between units */
+    *letter-spacing: normal;
+    /* reset IE < 8 */
+    *word-spacing: -0.43em;
+    /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed;
+    /* Webkit: fixes text-rendering: optimizeLegibility */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    max-width: 1296px;
+    margin: 0 auto; }
+    .delaration .wrapper[class*="pure-u"] {
+      /*
+            Resets the font family back to the OS/browser's default sans-serif font,
+            this the same font stack that Normalize.css sets for the `body`.
+        */
+      font-family: sans-serif; }
+    .delaration .wrapper ul {
+      width: 100%;
+      display: inline-block;
+      zoom: 1;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: top;
+      text-rendering: auto; }
+      .delaration .wrapper ul li a {
+        text-decoration: none;
+        color: #a9b0b4;
+        display: block;
+        font-size: 1.125em; }
+        .delaration .wrapper ul li a::before {
+          content: "质";
+          font-weight: 100;
+          display: inline-block;
+          color: #0869ff;
+          border: solid 2px #0869ff;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+          border-radius: 14px;
+          font-size: 16px;
+          margin: 0 5px 0 0; }
+        .delaration .wrapper ul li a.zheng::before {
+          content: "证"; }
+        .delaration .wrapper ul li a.bao::before {
+          content: "保"; }
+        .delaration .wrapper ul li a.tui::before {
+          content: "退"; }
+      .delaration .wrapper ul li:first-child a {
+        font-weight: bolder;
+        padding: 20px 0; }
+
+@media screen and (min-width: 48em) {
+  .product ul li {
+    width: 25%;
+    *width: 24.9690%; }
+  .contact .wrapper ul, .delaration .wrapper ul {
+    width: 25%;
+    *width: 24.9690%; } }

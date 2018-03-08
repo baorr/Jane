@@ -1,0 +1,231 @@
+@mixin form-toggle{
+	.toggle{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 100px;
+		height: 30px;
+		padding: 3px;
+		border-radius: 18px;
+		cursor: pointer;
+		box-sizing:content-box;
+		.toggle-input{
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			box-sizing:content-box;
+			&:checked{
+				~ .toggle-label{
+					background: $toggle-label-on-background-color;
+					&::before {
+						opacity: 0;
+					};
+					&::after {
+						opacity: 1;
+					};
+				};
+				~ .toggle-handle {
+					background: $toggle-handle-on-background-color;
+					left: 74px;
+				}
+			}
+			&:disabled{
+				~ .toggle-label, ~ .toggle-handle{
+					opacity: 0.5;
+				}
+			}
+		};
+		.toggle-handle {
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			width: 28px;
+			height: 28px;
+			background: $toggle-handle-off-background-color;
+			border-radius: 100%;
+		};
+		.toggle-label {
+			position: relative;
+			display: block;
+			height: inherit;
+			font-size: 10px;
+			text-transform: uppercase;
+			background: $toggle-label-off-background-color;
+			border-radius: inherit;
+			box-sizing:content-box;
+			&::before, &::after{
+				position: absolute;
+				top: 50%;
+				margin-top: -.5em;
+				line-height: 1;
+				-webkit-transition: inherit;
+				-moz-transition: inherit;
+				-o-transition: inherit;
+				transition: inherit;
+				box-sizing:content-box;
+			};
+			&::before {
+				content: attr(data-off);
+				right: 11px;
+				color: $toggle-font-color;
+			};
+			&::after {
+				content: attr(data-on);
+				left: 11px;
+				color: $toggle-font-color;
+				opacity: 0;
+			};
+		};
+		.toggle-label, .toggle-handle {
+			transition: All 0.3s ease;
+			-webkit-transition: All 0.3s ease;
+			-moz-transition: All 0.3s ease;
+			-o-transition: All 0.3s ease;
+		}
+		&[data-role="disabled"]{
+			cursor: auto;
+		}
+	}
+};
+
+@mixin form-toggle-slide{
+	.toggle{
+		&.toggle-slide{
+			padding: 3px;
+			background: $toggle-slide-background-color;
+			border-radius: 0;
+			background-image: none;
+			.toggle-handle{
+				display: none;
+			};
+			.toggle-label{
+				box-shadow: none;
+				background: none;
+				overflow: hidden;
+				&::before, &::after{
+					width: 100%;
+					height: 65%;
+					top: 5px;
+					left: 0;
+					text-align: center;
+					padding-top: 10%;
+				};
+				&::after {
+					color: $toggle-slide-font-color;
+					background: $toggle-slide-label-on-background-color;
+					left: -100px;
+				};
+				&::before {
+					background: $toggle-slide-label-off-background-color;
+				}
+			};
+
+			.toggle-input:checked{
+				~ .toggle-label{
+					&::before {
+						left: 100px;
+					};
+					&::after {
+						left: 0;
+					}
+				};
+			}
+		}
+	}
+};
+
+@mixin form-toggle-rotate{
+	.toggle{
+		&.toggle-rotate{
+			padding: 3px;
+			border-radius: 0;
+			border: 0;
+			.toggle-handle{
+				display: none;
+			};
+			.toggle-label{
+				box-shadow: none;
+				background: none;
+				&::before, &::after{
+					width: 100%;
+					height: 70%;
+					top: 5px;
+					left: 0;
+					text-align: center;
+					padding-top: 10%;
+				};
+				&::after {
+					background: $toggle-rotate-label-on-background-color;
+					backface-visibility: hidden;
+					transform: rotateY(180deg);
+				};
+				&::before {
+					background: $toggle-rotate-label-off-background-color;
+					backface-visibility: hidden;
+				}
+			};
+
+			.toggle-input:checked{
+				~ .toggle-label{
+					&::before {
+						transform: rotateY(180deg);
+					};
+					&::after {
+						transform: rotateY(0);
+					}
+				};
+			}
+		}
+	}
+};
+
+
+@mixin form-toggle-light{
+	.toggle{
+		&.toggle-light{
+			padding: 0;
+			background: $toggle-light-background-color;
+			.toggle-handle{
+				top: 6px;
+				left: 72px;
+				background: $toggle-light-handle-off-background-color;
+				width: 22px;
+				height: 22px;
+				box-shadow: none;
+				&::before {
+					background: #eceeef;
+				}
+			};
+			.toggle-label{
+				border: solid 2px $toggle-light-off-border-color;
+				box-shadow: none;
+				background: $toggle-light-background-color;
+				&::after {
+					color: $toggle-light-on-font-color;
+				};
+				&::before {
+					right: inherit;
+					left: 11px;
+					color: $toggle-light-off-font-color;
+				}
+			};
+
+			.toggle-input:checked{
+				~ .toggle-label{
+					border-color: $toggle-light-on-border-color;
+					background: $toggle-light-background-color;
+					&::before {
+						background: rgba(255,255,255,0.7);
+					}
+				};
+				~ .toggle-handle{
+					left: 72px;
+					box-shadow: none;
+					background: $toggle-light-handle-on-background-color;
+				}
+			};
+		}
+	}
+};
+

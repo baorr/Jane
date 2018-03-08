@@ -1,0 +1,260 @@
+.bx--responsive-table-container {
+    font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+    /*overflow-x: auto;*/
+    /*overflow-y: hidden;*/
+    width: 99.9%;
+}
+
+.bx--responsive-table {
+    background-color: #fff;
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #dfe3e6;
+}
+
+.bx--responsive-table td {
+    font-size: 0.875rem;
+    padding: 0 0.375rem;
+    vertical-align: middle;
+}
+
+.bx--responsive-table td p {
+    font-size: 0.875rem;
+}
+
+.bx--responsive-table th {
+    font-size: 0.75rem;
+    padding: 0.5625rem 0.375rem;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+.bx--responsive-table th:focus {
+    outline: 1px solid transparent;
+}
+
+.bx--responsive-table th:focus span {
+    outline: 1px solid #3d70b2;
+}
+
+.bx--responsive-table--tall td,
+.bx--responsive-table--tall th {
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+}
+
+.bx--responsive-table--static-size {
+    border-collapse: collapse;
+    width: auto;
+    border: 2px solid #dfe3e6;
+}
+
+.bx--responsive-table--static-size tr td:first-child,
+.bx--responsive-table--static-size tr th:first-child {
+    padding-left: 1.5rem;
+}
+
+.bx--responsive-table--tall td,
+.bx--responsive-table--tall th {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.bx--table-row {
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+.bx--table-head .bx--table-row {
+    border-bottom: 1px solid #3d70b2;
+    height: 2rem;
+}
+
+.bx--table-header {
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    height: 2.5rem;
+}
+
+.bx--table-body>.bx--parent-row,
+.bx--table-body>.bx--parent-row {
+    background-color: #fff;
+}
+
+.bx--table-body>.bx--parent-row+.bx--expandable-row,
+.bx--table-body>.bx--parent-row+.bx--expandable-row {
+    background-color: #fff;
+}
+
+.bx--table-body>.bx--parent-row--even,
+.bx--table-body>.bx--parent-row--even {
+    background-color: #f0f3f6;
+}
+
+.bx--table-body>.bx--parent-row--even+.bx--expandable-row,
+.bx--table-body>.bx--parent-row--even+.bx--expandable-row {
+    background-color: #f0f3f6;
+}
+
+.bx--table-body .bx--table-row {
+    border: 1px solid transparent;
+}
+
+.bx--table-body .bx--table-row:first-child:hover,
+.bx--table-body .bx--table-row:first-child:focus {
+    border-left: 2px solid #5596e6;
+    outline: 1px solid #5596e6;
+}
+
+.bx--table-body .bx--table-row:not(:first-child):hover,
+.bx--table-body .bx--table-row:not(:first-child):focus {
+    border-left: 2px solid #5596e6;
+    outline: 1px solid #5596e6;
+}
+
+.bx--expandable-row>td {
+    border-left: 4px solid #3d70b2;
+    padding: 2rem;
+}
+
+.bx--expandable-row--hidden {
+    visibility: hidden;
+}
+
+.bx--table-expand {
+    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    text-align: center;
+    width: 1.25rem;
+    cursor: pointer;
+}
+
+.bx--table-expand:focus {
+    outline: 1px solid transparent;
+}
+
+.bx--table-expand:focus svg {
+    outline: 1px solid #3d70b2;
+}
+
+.bx--table-expand__svg {
+    fill: #8c9ba5;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    width: 12px;
+    height: 12px;
+    margin-left: 0.4375rem;
+    margin-right: 0.125rem;
+}
+
+@media all and (min--moz-device-pixel-ratio: 0) and (min-resolution: 3e1dpcm) {
+    .bx--table-expand__svg {
+        margin-top: 2px;
+    }
+}
+
+.bx--table-expand[data-previous-value='collapsed'] .bx--table-expand__svg {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+[data-event='sort'] {
+    cursor: pointer;
+}
+
+.bx--table-sort__svg {
+    fill: #8c9ba5;
+    width: 8px;
+    height: 8px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.bx--table-sort--ascending .bx--table-sort__svg {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 200ms cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 200ms cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.bx--table-select {
+    width: 1.875rem;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bx--table-select .bx--checkbox-label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+}
+
+@media all and (min--moz-device-pixel-ratio: 0) and (min-resolution: 3e1dpcm) {
+    .bx--table-select .bx--checkbox-label {
+        margin-top: 2px;
+    }
+}
+
+.bx--table-select .bx--checkbox-appearance {
+    margin: 0;
+}
+
+.bx--table-overflow {
+    width: 2.5rem;
+    text-align: center;
+}
+
+.bx--table-overflow .bx--overflow-menu {
+    padding: 0;
+}
+
+.bx--structured-list--selection .bx--structured-list-td,
+.bx--structured-list--selection .bx--structured-list-th {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bx--structured-list--selection .bx--structured-list-td:first-child,
+.bx--structured-list--selection .bx--structured-list-th:first-child {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.bx--structured-list--selection .bx--structured-list-td:last-child,
+.bx--structured-list--selection .bx--structured-list-th:last-child {
+    padding-right: 2rem;
+}
+
+[data-structured-list] .bx--structured-list-td,
+[data-structured-list] .bx--structured-list-th {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+[data-structured-list] .bx--structured-list-td:first-child,
+[data-structured-list] .bx--structured-list-th:first-child {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+[data-structured-list] .bx--structured-list-td:last-child,
+[data-structured-list] .bx--structured-list-th:last-child {
+    padding-right: 2rem;
+}
