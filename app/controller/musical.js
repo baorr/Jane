@@ -6,8 +6,6 @@ module.exports = app => {
     async indexView() {
     	  const { ctx } = this;
 
-        ctx.setCusAccessLog('MusicalController','indexView');
-
         //生成视图  
         await ctx.render('/musical/index');
 
@@ -15,8 +13,6 @@ module.exports = app => {
 
     async liveView() {
         const { ctx } = this;
-
-        ctx.setCusAccessLog('MusicalController','liveView');
 
         //生成视图  
         await ctx.render('/musical/live');

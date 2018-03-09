@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title>Janell UI Example</title>
     <link rel="stylesheet" href="{{ctx.app.config.pathFix}}/public/css/output/ui/ui.css">
+    <style type="text/css">
+        html{
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
+          -webkit-tap-highlight-color: transparent; 
+          outline: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -112,7 +119,7 @@
         </table>
     </div>
 
-    <div class="tab-wrapper placer">
+    <!--<div class="tab-wrapper placer">
         <div class="tab">
             <div class="tab-list">
                 <ul>
@@ -168,55 +175,55 @@
                 <li><a href="#">Forth Step</a></li>
             </ul>
         </div>
-    </div>
+    </div>-->
 
 
     <div class="toggle-wrapper placer">
         
-        <label class="toggle">
-            <input class="toggle-input" type="checkbox" />
+        <label for="tigger-e-1" class="toggle">
+            <input id="tigger-e-1" class="toggle-input" type="checkbox" />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
 
-        <label class="toggle" data-role="disabled">
-            <input class="toggle-input" type="checkbox" disabled />
+        <label for="tigger-e-2" class="toggle" data-role="disabled">
+            <input id="tigger-e-2" class="toggle-input" type="checkbox" disabled />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
 
-        <label class="toggle toggle-slide">
-            <input class="toggle-input" type="checkbox" />
+        <label for="tigger-e-3" class="toggle toggle-slide">
+            <input id="tigger-e-3" class="toggle-input" type="checkbox" />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
 
-        <label class="toggle toggle-slide" data-role="disabled">
-            <input class="toggle-input" type="checkbox" disabled />
+        <label for="tigger-e-4" class="toggle toggle-slide" data-role="disabled">
+            <input id="tigger-e-4" class="toggle-input" type="checkbox" disabled />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
 
-        <label class="toggle toggle-rotate">
-            <input class="toggle-input" type="checkbox" />
+        <label for="tigger-e-5" class="toggle toggle-rotate">
+            <input id="tigger-e-5" class="toggle-input" type="checkbox" />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
 
-        <label class="toggle toggle-rotate" data-role="disabled">
-            <input class="toggle-input" type="checkbox" disabled />
+        <label for="tigger-e-6" class="toggle toggle-rotate" data-role="disabled">
+            <input id="tigger-e-6" class="toggle-input" type="checkbox" disabled />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
 
-        <label class="toggle toggle-light">
-            <input class="toggle-input" type="checkbox" />
+        <label for="tigger-e-7" class="toggle toggle-light">
+            <input id="tigger-e-7" class="toggle-input" type="checkbox" />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
 
-        <label class="toggle toggle-light" data-role="disabled">
-            <input class="toggle-input" type="checkbox" disabled />
+        <label for="tigger-e-8" class="toggle toggle-light" data-role="disabled">
+            <input id="tigger-e-8" class="toggle-input" type="checkbox" disabled />
             <span class="toggle-label" data-on="On" data-off="Off"></span> 
             <span class="toggle-handle"></span> 
         </label>
@@ -455,7 +462,7 @@
 
     <div>
     </div>
-    <script src="/public/js/fastclick.js"></script>
+    
     <script>
         if ('addEventListener' in document) {
             document.addEventListener('DOMContentLoaded', function() {
