@@ -464,12 +464,6 @@
     </div>
     
     <script>
-        if ('addEventListener' in document) {
-            document.addEventListener('DOMContentLoaded', function() {
-                FastClick.attach(document.body);
-            }, false);
-        }
-
         document.getElementById('test1').addEventListener('change',function() {
             console.log('Changed!');
         });
